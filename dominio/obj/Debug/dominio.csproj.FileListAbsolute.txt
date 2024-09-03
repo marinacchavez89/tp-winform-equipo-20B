@@ -1,0 +1,6 @@
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\dominio\bin\Debug\dominio.dll
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\dominio\bin\Debug\dominio.pdb
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\dominio\obj\Debug\dominio.dll
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\dominio\obj\Debug\dominio.pdb

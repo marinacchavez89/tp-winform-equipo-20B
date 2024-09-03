@@ -1,0 +1,9 @@
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\negocio\bin\Debug\negocio.dll
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\negocio\bin\Debug\negocio.pdb
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\negocio\bin\Debug\dominio.dll
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\negocio\bin\Debug\dominio.pdb
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\negocio\obj\Debug\negocio.csproj.Up2Date
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\negocio\obj\Debug\negocio.dll
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\negocio\obj\Debug\negocio.pdb

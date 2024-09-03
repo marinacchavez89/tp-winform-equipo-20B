@@ -1,0 +1,15 @@
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.csproj.AssemblyReference.cache
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmArticulos.resources
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.Properties.Resources.resources
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.csproj.GenerateResource.cache
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.csproj.CoreCompileInputs.cache
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\bin\Debug\TPWinForm_equipo-20B.exe.config
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\bin\Debug\TPWinForm_equipo-20B.exe
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\bin\Debug\TPWinForm_equipo-20B.pdb
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\bin\Debug\dominio.dll
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\bin\Debug\negocio.dll
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\bin\Debug\dominio.pdb
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\bin\Debug\negocio.pdb
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinFor.DB39B78B.Up2Date
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.exe
+C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.pdb
