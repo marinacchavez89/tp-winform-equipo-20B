@@ -46,5 +46,33 @@ namespace TPWinForm_equipo_20B
             dgvArticulos.Columns["Id"].Visible = false;
             dgvArticulos.Columns["ImagenArticulo"].Visible = false;
         }
+
+        private void btnAgregar_MouseEnter(object sender, EventArgs e)
+        {
+            btnAgregar.BackColor = Color.FromArgb(30, 144, 255);
+        }
+
+        private void btnAgregar_MouseLeave(object sender, EventArgs e)
+        {
+            btnAgregar.BackColor = Color.Navy;
+        }
+        private void btnModificar_MouseEnter(object sender, EventArgs e)
+        {
+            btnModificar.BackColor = Color.FromArgb(30, 144, 255);
+        }
+
+        private void btnModificar_MouseLeave(object sender, EventArgs e)
+        {
+            btnModificar.BackColor = Color.Navy;
+        }
+        private void btnEliminar_MouseEnter(object sender, EventArgs e)
+        {
+            btnEliminar.BackColor = Color.FromArgb(30, 144, 255);
+        }
+
+        private void btnEliminar_MouseLeave(object sender, EventArgs e)
+        {
+            btnEliminar.BackColor = Color.Navy;
+        }
     }
 }
