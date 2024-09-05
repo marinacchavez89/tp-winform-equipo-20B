@@ -17,7 +17,7 @@ namespace negocio
 
             try
             {                
-                datos.setearConsulta("select Id, Codigo, Nombre, Descripcion, Precio from articulos");
+                datos.setearConsulta("select a.Id, a.Codigo, a.Nombre, a.Descripcion, m.Descripcion as Marca, c.Descripcion as Categoria, a.Precio from articulos as a, marcas as m, categorias as c Where a.IdMarca = m.Id AND a.IdCategoria = c.Id");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -28,18 +28,14 @@ namespace negocio
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     if (!(datos.Lector["Descripcion"] is DBNull))
                         aux.Descripcion = (string)datos.Lector["Descripcion"];
-
-                    //Esta parte del codigo entra cuando hacemos las clases negocio de Marca, Categoria e Imagen.
-                    // y hacemos las consultas relacionadas.
-
-                    /*aux.TipoMarca = new Marca();
-                    aux.TipoMarca.Id = (int)datos.Lector["IdMarca"];
-                    aux.TipoMarca.Descripcion = (string)datos.Lector["TipoMarca"];
+                    aux.TipoMarca = new Marca();
+                    //aux.TipoMarca.Id = (int)datos.Lector["IdMarca"];
+                    aux.TipoMarca.Descripcion = (string)datos.Lector["Marca"];
                     aux.TipoCategoria = new Categoria();
-                    aux.TipoCategoria.Id = (int)datos.Lector["IdCategoria"];
-                    aux.TipoCategoria.Descripcion = (string)datos.Lector["TipoCategoria"];
+                    //aux.TipoCategoria.Id = (int)datos.Lector["IdCategoria"];
+                    aux.TipoCategoria.Descripcion = (string)datos.Lector["Categoria"];
                     aux.ImagenArticulo = new Imagen();
-                    aux.ImagenArticulo.Id = (int)datos.Lector["IdImagen"];
+                    /*aux.ImagenArticulo.Id = (int)datos.Lector["IdImagen"];
                     if (!(datos.Lector["ImagenUrl"] is DBNull))
                         aux.ImagenArticulo.ImagenUrl = (string)datos.Lector["ImagenUrl"];*/
                     aux.Precio = (decimal)datos.Lector["Precio"];
