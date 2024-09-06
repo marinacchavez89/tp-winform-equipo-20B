@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArticulos));
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxImagen = new System.Windows.Forms.PictureBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvArticulos
@@ -50,18 +50,20 @@
             this.dgvArticulos.MultiSelect = false;
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvArticulos.Size = new System.Drawing.Size(964, 334);
+            this.dgvArticulos.Size = new System.Drawing.Size(647, 334);
             this.dgvArticulos.TabIndex = 0;
             this.dgvArticulos.TabStop = false;
+            this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
-            // pictureBox1
+            // pbxImagen
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1034, 139);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(344, 334);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pbxImagen.Location = new System.Drawing.Point(852, 139);
+            this.pbxImagen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxImagen.Name = "pbxImagen";
+            this.pbxImagen.Size = new System.Drawing.Size(344, 334);
+            this.pbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxImagen.TabIndex = 1;
+            this.pbxImagen.TabStop = false;
             // 
             // btnAgregar
             // 
@@ -137,7 +139,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnSalir.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSalir.Location = new System.Drawing.Point(870, 499);
+            this.btnSalir.Location = new System.Drawing.Point(553, 499);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(112, 37);
@@ -154,14 +156,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(1412, 727);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(1370, 727);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbxImagen);
             this.Controls.Add(this.dgvArticulos);
             this.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.HelpButton = true;
@@ -171,7 +172,7 @@
             this.Text = "Gestor de Artículos";
             this.Load += new System.EventHandler(this.frmArticulos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,7 +182,7 @@
 
         private System.Windows.Forms.DataGridView dgvArticulos;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbxImagen;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnModificar;

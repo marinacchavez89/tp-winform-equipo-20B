@@ -25,6 +25,15 @@ namespace TPWinForm_equipo_20B
             cargar();
         }
 
+        private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvArticulos.CurrentRow != null)
+            {
+                Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                cargarImagen(seleccionado.ImagenArticulo.ImagenUrl);
+            }
+        }
+
         private void cargar()
         {
             try
@@ -45,6 +54,19 @@ namespace TPWinForm_equipo_20B
         {
             dgvArticulos.Columns["Id"].Visible = false;
             dgvArticulos.Columns["ImagenArticulo"].Visible = false;
+        }
+
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+                pbxImagen.Load(imagen);
+            }
+            catch (Exception ex)
+            {
+
+                pbxImagen.Load("https://bocashop.vteximg.com.br/arquivos/ids/163215-1000-1000/not-available-es.png?v=637443433440730000");
+            }
         }
 
         private void btnAgregar_MouseEnter(object sender, EventArgs e)
