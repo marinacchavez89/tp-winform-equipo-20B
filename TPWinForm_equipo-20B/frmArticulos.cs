@@ -74,5 +74,21 @@ namespace TPWinForm_equipo_20B
         {
             btnEliminar.BackColor = Color.Navy;
         }
+
+        private void btnSalir_MouseEnter(object sender, EventArgs e)
+        {
+            btnSalir.BackColor = Color.FromArgb(30, 144, 255);
+        }
+
+        private void btnSalir_MouseLeave(object sender, EventArgs e)
+        {
+            btnSalir.BackColor = Color.Navy;
+        }
+
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
