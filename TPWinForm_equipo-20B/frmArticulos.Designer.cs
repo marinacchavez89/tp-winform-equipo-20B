@@ -52,6 +52,7 @@
             this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvArticulos.Size = new System.Drawing.Size(964, 334);
             this.dgvArticulos.TabIndex = 0;
+            this.dgvArticulos.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -73,8 +74,8 @@
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(112, 37);
-            this.btnAgregar.TabIndex = 2;
-            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.TabIndex = 0;
+            this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseCompatibleTextRendering = true;
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.MouseEnter += new System.EventHandler(this.btnAgregar_MouseEnter);
@@ -89,7 +90,7 @@
             this.lblTitulo.Location = new System.Drawing.Point(356, 45);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(309, 45);
-            this.lblTitulo.TabIndex = 3;
+            this.lblTitulo.TabIndex = 5;
             this.lblTitulo.Text = "Gestor de Articulos";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -104,8 +105,8 @@
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(112, 37);
-            this.btnModificar.TabIndex = 4;
-            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TabIndex = 1;
+            this.btnModificar.Text = "&Modificar";
             this.btnModificar.UseCompatibleTextRendering = true;
             this.btnModificar.UseVisualStyleBackColor = false;
             this.btnModificar.MouseEnter += new System.EventHandler(this.btnModificar_MouseEnter);
@@ -122,8 +123,8 @@
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(112, 37);
-            this.btnEliminar.TabIndex = 5;
-            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TabIndex = 2;
+            this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseCompatibleTextRendering = true;
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.MouseEnter += new System.EventHandler(this.btnEliminar_MouseEnter);
@@ -140,8 +141,8 @@
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(112, 37);
-            this.btnSalir.TabIndex = 6;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "&Salir";
             this.btnSalir.UseCompatibleTextRendering = true;
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -154,6 +155,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(1412, 727);
+            this.ControlBox = false;
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
