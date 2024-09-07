@@ -15,6 +15,8 @@ namespace TPWinForm_equipo_20B
     public partial class frmArticulos : Form
     {
         private List<Articulo> listaArticulo;
+        private List<string> imagenesActuales;
+        private int indiceImagenActual;
         public frmArticulos()
         {
             InitializeComponent();
@@ -30,7 +32,14 @@ namespace TPWinForm_equipo_20B
             if (dgvArticulos.CurrentRow != null)
             {
                 Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                cargarImagen(seleccionado.ImagenArticulo.ImagenUrl);
+                imagenesActuales = new List<String>();
+                foreach (Imagen img in seleccionado.ImagenArticulo)
+                {
+                    imagenesActuales.Add(img.ImagenUrl);
+                }
+
+                indiceImagenActual = 0; // no me esta funcionando
+                cargarImagen(imagenesActuales[indiceImagenActual]);
             }
         }
 
@@ -53,7 +62,6 @@ namespace TPWinForm_equipo_20B
         private void ocultarColumnas()
         {
             dgvArticulos.Columns["Id"].Visible = false;
-            dgvArticulos.Columns["ImagenArticulo"].Visible = false;
         }
 
         private void cargarImagen(string imagen)
@@ -143,5 +151,10 @@ namespace TPWinForm_equipo_20B
             }
         }
 
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            indiceImagenActual = (indiceImagenActual + 1) % imagenesActuales.Count;
+            cargarImagen(imagenesActuales[indiceImagenActual]);
+        }
     }
 }

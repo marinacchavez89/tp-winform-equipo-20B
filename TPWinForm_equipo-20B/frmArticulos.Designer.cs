@@ -37,6 +37,7 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
             this.SuspendLayout();
@@ -152,12 +153,30 @@
             this.btnSalir.MouseEnter += new System.EventHandler(this.btnSalir_MouseEnter);
             this.btnSalir.MouseLeave += new System.EventHandler(this.btnSalir_MouseLeave);
             // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.BackColor = System.Drawing.Color.Navy;
+            this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSiguiente.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnSiguiente.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSiguiente.Location = new System.Drawing.Point(1084, 499);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(112, 37);
+            this.btnSiguiente.TabIndex = 6;
+            this.btnSiguiente.Text = "Si&guiente";
+            this.btnSiguiente.UseCompatibleTextRendering = true;
+            this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
+            // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(1370, 727);
+            this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
@@ -189,6 +208,7 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnSiguiente;
     }
 }
 

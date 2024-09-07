@@ -14,12 +14,12 @@ namespace negocio
         {
             List<Articulo> lista = new List<Articulo>();
             AccesoDatos datos = new AccesoDatos();
-
+            AccesoDatos datosImagenes = new AccesoDatos();
 
 
             try
-            {                
-                datos.setearConsulta("SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion,(SELECT m.Descripcion FROM marcas AS m WHERE m.Id = a.IdMarca) AS Marca, ISNULL((SELECT c.Descripcion FROM categorias AS c WHERE c.Id = a.IdCategoria), 'Sin Categoria') AS Categoria, a.Precio,(SELECT TOP 1 img.ImagenUrl FROM imagenes AS img WHERE img.IdArticulo = a.Id) AS ImagenUrl FROM articulos AS a");
+            {
+                datos.setearConsulta("SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion, (SELECT m.Descripcion FROM marcas AS m WHERE m.Id = a.IdMarca) AS Marca, ISNULL((SELECT c.Descripcion FROM categorias AS c WHERE c.Id = a.IdCategoria), 'Sin Categoria') AS Categoria, a.Precio FROM articulos AS a;");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -37,13 +37,11 @@ namespace negocio
                     //aux.TipoCategoria.Id = (int)datos.Lector["IdCategoria"];
                     aux.TipoCategoria.Descripcion = (string)datos.Lector["Categoria"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
-                    aux.ImagenArticulo = new Imagen();
-                    aux.ImagenArticulo.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                    aux.ImagenArticulo = new List<Imagen>();
 
                     lista.Add(aux);
                 }
 
-                return lista;
             }
             catch (Exception ex)
             {
@@ -54,6 +52,40 @@ namespace negocio
             {
                 datos.cerrarConexion();
             }
+            try
+            {
+                datosImagenes.setearConsulta("SELECT img.IdArticulo, img.ImagenUrl FROM imagenes AS img;");
+                datosImagenes.ejecutarLectura();
+
+                while (datosImagenes.Lector.Read())
+                {
+                    int idArticulo = (int)datosImagenes.Lector["IdArticulo"];
+                    string imagenUrl = (string)datosImagenes.Lector["ImagenUrl"];
+
+                    foreach (Articulo articulo in lista)
+                    {
+                        if(articulo.Id == idArticulo)
+                        {
+                            Imagen imagen = new Imagen { ImagenUrl = imagenUrl };
+                            articulo.ImagenArticulo.Add(imagen);
+                        }
+                    }
+
+                }
+            }
+            
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            finally
+            {
+                datosImagenes.cerrarConexion();
+            }
+
+            return lista;
+           
         }
     }
 }
