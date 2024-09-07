@@ -110,7 +110,38 @@ namespace TPWinForm_equipo_20B
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult respuesta = MessageBox.Show("¿De verdad desea salir?", "Saliendo...", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (respuesta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            eliminar();
+        }
+
+        private void eliminar()
+        {
+            //ArticuloNegocio negocio = new ArticuloNegocio();
+            //Articulo seleccionado;
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿De verdad querés eliminarlo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes)
+                {
+                    //seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+                    //negocio.eliminar(seleccionado.Id); //falta método eliminar en clase ArticuloNegocio
+
+                    cargar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
     }
 }

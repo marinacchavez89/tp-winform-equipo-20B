@@ -129,6 +129,7 @@
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseCompatibleTextRendering = true;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             this.btnEliminar.MouseEnter += new System.EventHandler(this.btnEliminar_MouseEnter);
             this.btnEliminar.MouseLeave += new System.EventHandler(this.btnEliminar_MouseLeave);
             // 

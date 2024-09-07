@@ -33,7 +33,7 @@ namespace negocio
                     aux.TipoMarca.Descripcion = (string)datos.Lector["Marca"];
                     aux.TipoCategoria = new Categoria();
                     //aux.TipoCategoria.Id = (int)datos.Lector["IdCategoria"];
-                    aux.TipoCategoria.Descripcion = (string)datos.Lector["Categoria"];                    ;
+                    aux.TipoCategoria.Descripcion = (string)datos.Lector["Categoria"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
                     aux.ImagenArticulo = new Imagen();
                     aux.ImagenArticulo.ImagenUrl = (string)datos.Lector["ImagenUrl"];
