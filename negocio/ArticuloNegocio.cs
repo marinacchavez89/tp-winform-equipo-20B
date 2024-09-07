@@ -15,9 +15,11 @@ namespace negocio
             List<Articulo> lista = new List<Articulo>();
             AccesoDatos datos = new AccesoDatos();
 
+
+
             try
             {                
-                datos.setearConsulta("select a.Id, a.Codigo, a.Nombre, a.Descripcion, m.Descripcion as Marca, c.Descripcion as Categoria, a.Precio, img.ImagenUrl from articulos as a, marcas as m, categorias as c, imagenes as img Where a.IdMarca = m.Id AND a.IdCategoria = c.Id and a.Id = img.Id");
+                datos.setearConsulta("SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion,(SELECT m.Descripcion FROM marcas AS m WHERE m.Id = a.IdMarca) AS Marca, ISNULL((SELECT c.Descripcion FROM categorias AS c WHERE c.Id = a.IdCategoria), 'Sin Categoria') AS Categoria, a.Precio,(SELECT TOP 1 img.ImagenUrl FROM imagenes AS img WHERE img.IdArticulo = a.Id) AS ImagenUrl FROM articulos AS a");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
