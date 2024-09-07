@@ -87,5 +87,10 @@ namespace negocio
             return lista;
            
         }
+        public void agregar(Articulo articulo)
+        {
+
+        }
+        public void modificar(Articulo articulo) { }
     }
 }

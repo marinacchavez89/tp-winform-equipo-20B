@@ -156,5 +156,11 @@ namespace TPWinForm_equipo_20B
             indiceImagenActual = (indiceImagenActual + 1) % imagenesActuales.Count;
             cargarImagen(imagenesActuales[indiceImagenActual]);
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmAltaArticulo alta = new frmAltaArticulo();
+            alta.ShowDialog();
+        }
     }
 }
