@@ -169,6 +169,7 @@ namespace TPWinForm_equipo_20B
         {
             frmAltaArticulo alta = new frmAltaArticulo();
             alta.ShowDialog();
+            cargar();
         }
     }
 }
