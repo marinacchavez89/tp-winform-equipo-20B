@@ -29,17 +29,25 @@ namespace TPWinForm_equipo_20B
 
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvArticulos.CurrentRow != null)
+            try
             {
-                Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                imagenesActuales = new List<String>();
-                foreach (Imagen img in seleccionado.ImagenArticulo)
+                if (dgvArticulos.CurrentRow != null)
                 {
-                    imagenesActuales.Add(img.ImagenUrl);
-                }
+                    Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    imagenesActuales = new List<String>();
+                    foreach (Imagen img in seleccionado.ImagenArticulo)
+                    {
+                        imagenesActuales.Add(img.ImagenUrl);
+                    }
 
-                indiceImagenActual = 0; // no me esta funcionando
-                cargarImagen(imagenesActuales[indiceImagenActual]);
+                    indiceImagenActual = 0; // no me esta funcionando
+                    cargarImagen(imagenesActuales[indiceImagenActual]);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
             }
         }
 

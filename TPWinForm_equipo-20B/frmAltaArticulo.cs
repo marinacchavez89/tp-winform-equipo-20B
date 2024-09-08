@@ -27,18 +27,38 @@ namespace TPWinForm_equipo_20B
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             Articulo nuevoArticulo = new Articulo();
+            ArticuloNegocio negocio = new ArticuloNegocio();
    
             try
             {
                 nuevoArticulo.Codigo = txtCodigo.Text;
                 nuevoArticulo.Nombre = txtNombre.Text;
                 nuevoArticulo.Descripcion = txtDescripcion.Text;
-             
-
+                nuevoArticulo.TipoMarca = (Marca)cboMarca.SelectedItem;
+                nuevoArticulo.TipoCategoria = (Categoria)cboCategoria.SelectedItem;
                 nuevoArticulo.Precio = int.Parse(txtPrecio.Text);
-                
-                MessageBox.Show("Proximamente");
+
+                negocio.agregar(nuevoArticulo);                
+                MessageBox.Show("Agregado exitosamente");
+                Close();
               
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void frmAltaArticulo_Load(object sender, EventArgs e)
+        {
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+
+            try
+            {
+                cboCategoria.DataSource = categoriaNegocio.listar();
+                cboMarca.DataSource = marcaNegocio.listar();
             }
             catch (Exception ex)
             {
