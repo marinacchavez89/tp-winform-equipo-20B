@@ -161,7 +161,6 @@ namespace TPWinForm_equipo_20B
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-
             Articulo seleccionado;
             if (dgvArticulos.CurrentRow != null)
             {
@@ -174,8 +173,6 @@ namespace TPWinForm_equipo_20B
             {
                 MessageBox.Show("Seleccione un artículo haciendo clic en una fila de la tabla.");
             }
-                        
-            
         }
     }
 }

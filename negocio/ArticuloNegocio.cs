@@ -20,7 +20,7 @@ namespace negocio
             try
             {
                 datos.setearConsulta(@"SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion,
-                                      a.IdMarca, m.Descripcion AS Marca,
+                                      a.IdMarca, ISNULL(m.Descripcion, 'Sin Marca') AS Marca,
                                       a.IdCategoria, ISNULL(c.Descripcion, 'Sin Categoria') AS Categoria,
                                       a.Precio
                                FROM articulos AS a
