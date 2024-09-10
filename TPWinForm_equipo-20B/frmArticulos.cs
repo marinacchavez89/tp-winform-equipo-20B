@@ -175,7 +175,7 @@ namespace TPWinForm_equipo_20B
             { 
                 indiceImagenActual = (indiceImagenActual - 1 + imagenesActuales.Count) % imagenesActuales.Count;
                 cargarImagen(imagenesActuales[indiceImagenActual]);
-            }                
+            }
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -188,7 +188,7 @@ namespace TPWinForm_equipo_20B
         private void btnModificar_Click(object sender, EventArgs e)
         {
             Articulo seleccionado;
-            DialogResult respuesta = MessageBox.Show("¿Desea eliminar el artículo seleccionado de forma permanente?", "Modificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            DialogResult respuesta = MessageBox.Show("¿Desea modificar el artículo seleccionado de forma permanente?", "Modificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             if (respuesta == DialogResult.OK && dgvArticulos.CurrentRow != null)
             {
                 seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
@@ -199,6 +199,29 @@ namespace TPWinForm_equipo_20B
             else
             {
                 MessageBox.Show("Seleccione un artículo haciendo clic en una fila de la tabla.");
+            }
+        }
+
+        private void btnVerDetalle_Click(object sender, EventArgs e)
+        {
+            try
+            {   
+                Articulo seleccionado;
+
+                if (dgvArticulos.CurrentRow != null)
+                {                    
+                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    frmDetalle detalle = new frmDetalle(seleccionado);
+                    detalle.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un artículo haciendo clic en una fila de la tabla.", "Detalle", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Seleccione un artículo haciendo clic en una fila de la tabla.", "Detalle", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

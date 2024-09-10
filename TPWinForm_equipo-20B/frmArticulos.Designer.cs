@@ -40,6 +40,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnVerDetalle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
             this.SuspendLayout();
@@ -203,12 +204,30 @@
             this.btnAnterior.UseVisualStyleBackColor = false;
             this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
+            // btnVerDetalle
+            // 
+            this.btnVerDetalle.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnVerDetalle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerDetalle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerDetalle.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnVerDetalle.Location = new System.Drawing.Point(964, 499);
+            this.btnVerDetalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVerDetalle.Name = "btnVerDetalle";
+            this.btnVerDetalle.Size = new System.Drawing.Size(112, 37);
+            this.btnVerDetalle.TabIndex = 8;
+            this.btnVerDetalle.Text = "Ver Detalle";
+            this.btnVerDetalle.UseCompatibleTextRendering = true;
+            this.btnVerDetalle.UseVisualStyleBackColor = false;
+            this.btnVerDetalle.Click += new System.EventHandler(this.btnVerDetalle_Click);
+            // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1370, 727);
+            this.Controls.Add(this.btnVerDetalle);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnSalir);
@@ -225,6 +244,7 @@
             this.Name = "frmArticulos";
             this.Text = "Gestor de Artículos";
             this.Load += new System.EventHandler(this.frmArticulos_Load);
+            this.Click += new System.EventHandler(this.btnVerDetalle_Click);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).EndInit();
             this.ResumeLayout(false);
@@ -244,6 +264,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnVerDetalle;
     }
 }
 

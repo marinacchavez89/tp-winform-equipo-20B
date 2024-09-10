@@ -29,102 +29,102 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAltaArticulo));
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblMarca = new System.Windows.Forms.Label();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.lblPrecio = new System.Windows.Forms.Label();
+            this.lblCodigoDetalle = new System.Windows.Forms.Label();
+            this.lblNombreDetalle = new System.Windows.Forms.Label();
+            this.lblDescripcionDetalle = new System.Windows.Forms.Label();
+            this.txtCodigoDetalle = new System.Windows.Forms.TextBox();
+            this.txtDescripcionDetalle = new System.Windows.Forms.TextBox();
+            this.txtNombreDetalle = new System.Windows.Forms.TextBox();
+            this.lblMarcaDetalle = new System.Windows.Forms.Label();
+            this.lblCategoriaDetalle = new System.Windows.Forms.Label();
+            this.lblPrecioDetalle = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.cboMarca = new System.Windows.Forms.ComboBox();
+            this.cboMarcaDetalle = new System.Windows.Forms.ComboBox();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // lblCodigo
+            // lblCodigoDetalle
             // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblCodigo.Location = new System.Drawing.Point(59, 64);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(60, 21);
-            this.lblCodigo.TabIndex = 0;
-            this.lblCodigo.Text = "Código";
+            this.lblCodigoDetalle.AutoSize = true;
+            this.lblCodigoDetalle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblCodigoDetalle.Location = new System.Drawing.Point(59, 64);
+            this.lblCodigoDetalle.Name = "lblCodigoDetalle";
+            this.lblCodigoDetalle.Size = new System.Drawing.Size(60, 21);
+            this.lblCodigoDetalle.TabIndex = 0;
+            this.lblCodigoDetalle.Text = "Código";
             // 
-            // lblNombre
+            // lblNombreDetalle
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblNombre.Location = new System.Drawing.Point(59, 100);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(68, 21);
-            this.lblNombre.TabIndex = 1;
-            this.lblNombre.Text = "Nombre";
+            this.lblNombreDetalle.AutoSize = true;
+            this.lblNombreDetalle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblNombreDetalle.Location = new System.Drawing.Point(59, 100);
+            this.lblNombreDetalle.Name = "lblNombreDetalle";
+            this.lblNombreDetalle.Size = new System.Drawing.Size(68, 21);
+            this.lblNombreDetalle.TabIndex = 1;
+            this.lblNombreDetalle.Text = "Nombre";
             // 
-            // lblDescripcion
+            // lblDescripcionDetalle
             // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblDescripcion.Location = new System.Drawing.Point(59, 136);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(92, 20);
-            this.lblDescripcion.TabIndex = 2;
-            this.lblDescripcion.Text = "Descripción";
+            this.lblDescripcionDetalle.AutoSize = true;
+            this.lblDescripcionDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblDescripcionDetalle.Location = new System.Drawing.Point(59, 136);
+            this.lblDescripcionDetalle.Name = "lblDescripcionDetalle";
+            this.lblDescripcionDetalle.Size = new System.Drawing.Size(92, 20);
+            this.lblDescripcionDetalle.TabIndex = 2;
+            this.lblDescripcionDetalle.Text = "Descripción";
             // 
-            // txtCodigo
+            // txtCodigoDetalle
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(157, 65);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(121, 20);
-            this.txtCodigo.TabIndex = 3;
+            this.txtCodigoDetalle.Location = new System.Drawing.Point(157, 65);
+            this.txtCodigoDetalle.Name = "txtCodigoDetalle";
+            this.txtCodigoDetalle.Size = new System.Drawing.Size(121, 20);
+            this.txtCodigoDetalle.TabIndex = 3;
             // 
-            // txtDescripcion
+            // txtDescripcionDetalle
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(157, 135);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(121, 20);
-            this.txtDescripcion.TabIndex = 4;
+            this.txtDescripcionDetalle.Location = new System.Drawing.Point(157, 135);
+            this.txtDescripcionDetalle.Name = "txtDescripcionDetalle";
+            this.txtDescripcionDetalle.Size = new System.Drawing.Size(121, 20);
+            this.txtDescripcionDetalle.TabIndex = 4;
             // 
-            // txtNombre
+            // txtNombreDetalle
             // 
-            this.txtNombre.Location = new System.Drawing.Point(156, 100);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(121, 20);
-            this.txtNombre.TabIndex = 5;
+            this.txtNombreDetalle.Location = new System.Drawing.Point(156, 100);
+            this.txtNombreDetalle.Name = "txtNombreDetalle";
+            this.txtNombreDetalle.Size = new System.Drawing.Size(121, 20);
+            this.txtNombreDetalle.TabIndex = 5;
             // 
-            // lblMarca
+            // lblMarcaDetalle
             // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblMarca.Location = new System.Drawing.Point(59, 171);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(53, 21);
-            this.lblMarca.TabIndex = 6;
-            this.lblMarca.Text = "Marca";
+            this.lblMarcaDetalle.AutoSize = true;
+            this.lblMarcaDetalle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblMarcaDetalle.Location = new System.Drawing.Point(59, 171);
+            this.lblMarcaDetalle.Name = "lblMarcaDetalle";
+            this.lblMarcaDetalle.Size = new System.Drawing.Size(53, 21);
+            this.lblMarcaDetalle.TabIndex = 6;
+            this.lblMarcaDetalle.Text = "Marca";
             // 
-            // lblCategoria
+            // lblCategoriaDetalle
             // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblCategoria.Location = new System.Drawing.Point(59, 207);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(77, 21);
-            this.lblCategoria.TabIndex = 7;
-            this.lblCategoria.Text = "Categoria";
+            this.lblCategoriaDetalle.AutoSize = true;
+            this.lblCategoriaDetalle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblCategoriaDetalle.Location = new System.Drawing.Point(59, 207);
+            this.lblCategoriaDetalle.Name = "lblCategoriaDetalle";
+            this.lblCategoriaDetalle.Size = new System.Drawing.Size(77, 21);
+            this.lblCategoriaDetalle.TabIndex = 7;
+            this.lblCategoriaDetalle.Text = "Categoria";
             // 
-            // lblPrecio
+            // lblPrecioDetalle
             // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblPrecio.Location = new System.Drawing.Point(59, 243);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(53, 21);
-            this.lblPrecio.TabIndex = 8;
-            this.lblPrecio.Text = "Precio";
+            this.lblPrecioDetalle.AutoSize = true;
+            this.lblPrecioDetalle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblPrecioDetalle.Location = new System.Drawing.Point(59, 243);
+            this.lblPrecioDetalle.Name = "lblPrecioDetalle";
+            this.lblPrecioDetalle.Size = new System.Drawing.Size(53, 21);
+            this.lblPrecioDetalle.TabIndex = 8;
+            this.lblPrecioDetalle.Text = "Precio";
             // 
             // txtPrecio
             // 
@@ -163,14 +163,14 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // cboMarca
+            // cboMarcaDetalle
             // 
-            this.cboMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMarca.FormattingEnabled = true;
-            this.cboMarca.Location = new System.Drawing.Point(156, 170);
-            this.cboMarca.Name = "cboMarca";
-            this.cboMarca.Size = new System.Drawing.Size(121, 21);
-            this.cboMarca.TabIndex = 14;
+            this.cboMarcaDetalle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMarcaDetalle.FormattingEnabled = true;
+            this.cboMarcaDetalle.Location = new System.Drawing.Point(156, 170);
+            this.cboMarcaDetalle.Name = "cboMarcaDetalle";
+            this.cboMarcaDetalle.Size = new System.Drawing.Size(121, 21);
+            this.cboMarcaDetalle.TabIndex = 14;
             // 
             // cboCategoria
             // 
@@ -188,19 +188,19 @@
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(346, 425);
             this.Controls.Add(this.cboCategoria);
-            this.Controls.Add(this.cboMarca);
+            this.Controls.Add(this.cboMarcaDetalle);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.lblPrecio);
-            this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtCodigo);
-            this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.lblCodigo);
+            this.Controls.Add(this.lblPrecioDetalle);
+            this.Controls.Add(this.lblCategoriaDetalle);
+            this.Controls.Add(this.lblMarcaDetalle);
+            this.Controls.Add(this.txtNombreDetalle);
+            this.Controls.Add(this.txtDescripcionDetalle);
+            this.Controls.Add(this.txtCodigoDetalle);
+            this.Controls.Add(this.lblDescripcionDetalle);
+            this.Controls.Add(this.lblNombreDetalle);
+            this.Controls.Add(this.lblCodigoDetalle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAltaArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -213,19 +213,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.Label lblCodigoDetalle;
+        private System.Windows.Forms.Label lblNombreDetalle;
+        private System.Windows.Forms.Label lblDescripcionDetalle;
+        private System.Windows.Forms.TextBox txtCodigoDetalle;
+        private System.Windows.Forms.TextBox txtDescripcionDetalle;
+        private System.Windows.Forms.TextBox txtNombreDetalle;
+        private System.Windows.Forms.Label lblMarcaDetalle;
+        private System.Windows.Forms.Label lblCategoriaDetalle;
+        private System.Windows.Forms.Label lblPrecioDetalle;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.ComboBox cboMarca;
+        private System.Windows.Forms.ComboBox cboMarcaDetalle;
         private System.Windows.Forms.ComboBox cboCategoria;
     }
 }

@@ -40,11 +40,11 @@ namespace TPWinForm_equipo_20B
             {
                 if (articulo == null)
                     articulo = new Articulo();
-                articulo.Codigo = txtCodigo.Text;
-                articulo.Nombre = txtNombre.Text;
-                articulo.Descripcion = txtDescripcion.Text;
+                articulo.Codigo = txtCodigoDetalle.Text;
+                articulo.Nombre = txtNombreDetalle.Text;
+                articulo.Descripcion = txtDescripcionDetalle.Text;
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
-                articulo.TipoMarca = (Marca)cboMarca.SelectedItem;
+                articulo.TipoMarca = (Marca)cboMarcaDetalle.SelectedItem;
                 articulo.TipoCategoria = (Categoria)cboCategoria.SelectedItem;
 
                 DialogResult respuesta; 
@@ -56,7 +56,7 @@ namespace TPWinForm_equipo_20B
                 }
                 else
                 {
-                    if (string.IsNullOrEmpty(txtCodigo.Text) || string.IsNullOrEmpty(txtNombre.Text))
+                    if (string.IsNullOrEmpty(txtCodigoDetalle.Text) || string.IsNullOrEmpty(txtNombreDetalle.Text))
                     {
                         respuesta = MessageBox.Show("Debe completar Código y Nombre.", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
@@ -86,19 +86,19 @@ namespace TPWinForm_equipo_20B
             CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
             try
             {
-                cboMarca.DataSource = marcaNegocio.listar();
-                cboMarca.ValueMember = "Id";
-                cboMarca.DisplayMember = "Descripcion";
+                cboMarcaDetalle.DataSource = marcaNegocio.listar();
+                cboMarcaDetalle.ValueMember = "Id";
+                cboMarcaDetalle.DisplayMember = "Descripcion";
                 cboCategoria.DataSource = categoriaNegocio.listar();
                 cboCategoria.ValueMember = "Id";
                 cboCategoria.DisplayMember = "Descripcion";
 
                 if (articulo != null)
                 {
-                    txtCodigo.Text = articulo.Codigo.ToString();
-                    txtNombre.Text = articulo.Nombre;
-                    txtDescripcion.Text = articulo.Descripcion;
-                    cboMarca.SelectedValue = articulo.TipoMarca.Id;
+                    txtCodigoDetalle.Text = articulo.Codigo.ToString();
+                    txtNombreDetalle.Text = articulo.Nombre;
+                    txtDescripcionDetalle.Text = articulo.Descripcion;
+                    cboMarcaDetalle.SelectedValue = articulo.TipoMarca.Id;
                     cboCategoria.SelectedValue = articulo.TipoCategoria.Id;
                     txtPrecio.Text = articulo.Precio.ToString();
                 }
