@@ -40,13 +40,15 @@ namespace TPWinForm_equipo_20B
                         imagenesActuales.Add(img.ImagenUrl);
                     }
 
-                    indiceImagenActual = 0; // no me esta funcionando
-                    cargarImagen(imagenesActuales[indiceImagenActual]);
+                    indiceImagenActual = 0;
+                    if (imagenesActuales.Count > 0)
+                    {
+                        cargarImagen(imagenesActuales[indiceImagenActual]);
+                    }
                 }
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
             }
         }
@@ -80,7 +82,6 @@ namespace TPWinForm_equipo_20B
             }
             catch (Exception ex)
             {
-
                 pbxImagen.Load("https://bocashop.vteximg.com.br/arquivos/ids/163215-1000-1000/not-available-es.png?v=637443433440730000");
             }
         }
@@ -134,22 +135,47 @@ namespace TPWinForm_equipo_20B
         }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-           //TODO: Martin, debes agregar los pasos de eliminar aquí, el método está en ArticuloNegocio.
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            Articulo seleccionado;
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿Desea eliminar el artículo seleccionado de forma permanente?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes && dgvArticulos.CurrentRow != null)
+                {
+                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    negocio.eliminar(seleccionado.Id);
+                    cargar();
+                }
+
+            }
+            catch (NullReferenceException ex)
+            {
+                MessageBox.Show("Debe seleccionar al menos un artículo para eliminar.");
+                cargar();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
-
-        
-
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            indiceImagenActual = (indiceImagenActual + 1) % imagenesActuales.Count;
-            cargarImagen(imagenesActuales[indiceImagenActual]);                        
+            if (imagenesActuales.Count >= 0)
+            {
+                indiceImagenActual = (indiceImagenActual + 1) % imagenesActuales.Count;
+                cargarImagen(imagenesActuales[indiceImagenActual]);
+            }
         }
 
         private void btnAnterior_Click(object sender, EventArgs e)
         {
-            indiceImagenActual = (indiceImagenActual - 1 + imagenesActuales.Count) % imagenesActuales.Count;
-            cargarImagen(imagenesActuales[indiceImagenActual]);
+            if (imagenesActuales.Count >= 0)
+            { 
+                indiceImagenActual = (indiceImagenActual - 1 + imagenesActuales.Count) % imagenesActuales.Count;
+                cargarImagen(imagenesActuales[indiceImagenActual]);
+            }                
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -162,7 +188,8 @@ namespace TPWinForm_equipo_20B
         private void btnModificar_Click(object sender, EventArgs e)
         {
             Articulo seleccionado;
-            if (dgvArticulos.CurrentRow != null)
+            DialogResult respuesta = MessageBox.Show("¿Desea eliminar el artículo seleccionado de forma permanente?", "Modificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (respuesta == DialogResult.OK && dgvArticulos.CurrentRow != null)
             {
                 seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
                 frmAltaArticulo modificar = new frmAltaArticulo(seleccionado);

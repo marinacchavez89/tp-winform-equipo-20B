@@ -47,21 +47,23 @@ namespace TPWinForm_equipo_20B
                 articulo.TipoMarca = (Marca)cboMarca.SelectedItem;
                 articulo.TipoCategoria = (Categoria)cboCategoria.SelectedItem;
 
+                DialogResult respuesta; 
+
                 if (articulo.Id != 0)
-                {
+                {   
                     negocio.modificar(articulo);
-                    MessageBox.Show("Artículo modificado exitosamente.");
+                    respuesta = MessageBox.Show("Artículo modificado exitosamente.", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
                     if (string.IsNullOrEmpty(txtCodigo.Text) || string.IsNullOrEmpty(txtNombre.Text))
                     {
-                        MessageBox.Show("Debe completar Código y Nombre.");
+                        respuesta = MessageBox.Show("Debe completar Código y Nombre.", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
                         negocio.agregar(articulo);
-                        MessageBox.Show("Artículo agregado exitosamente.");
+                        respuesta = MessageBox.Show("Artículo agregado exitosamente.", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
 
                 }
