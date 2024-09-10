@@ -14,9 +14,17 @@ namespace TPWinForm_equipo_20B
 {
     public partial class frmAltaArticulo : Form
     {
+        private Articulo articulo = null;
+
         public frmAltaArticulo()
         {
             InitializeComponent();
+        }
+        public frmAltaArticulo(Articulo articulo)
+        {
+            InitializeComponent();
+            this.articulo = articulo;
+            Text = "Modificar artículo";
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -26,43 +34,75 @@ namespace TPWinForm_equipo_20B
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Articulo nuevoArticulo = new Articulo();
             ArticuloNegocio negocio = new ArticuloNegocio();
-   
+
             try
             {
-                nuevoArticulo.Codigo = txtCodigo.Text;
-                nuevoArticulo.Nombre = txtNombre.Text;
-                nuevoArticulo.Descripcion = txtDescripcion.Text;
-                nuevoArticulo.TipoMarca = (Marca)cboMarca.SelectedItem;
-                nuevoArticulo.TipoCategoria = (Categoria)cboCategoria.SelectedItem;
-                nuevoArticulo.Precio = int.Parse(txtPrecio.Text);
+                if (articulo == null)
+                    articulo = new Articulo();
+                articulo.Codigo = txtCodigo.Text;
+                articulo.Nombre = txtNombre.Text;
+                articulo.Descripcion = txtDescripcion.Text;
+                articulo.Precio = decimal.Parse(txtPrecio.Text);
+                articulo.TipoMarca = (Marca)cboMarca.SelectedItem;
+                articulo.TipoCategoria = (Categoria)cboCategoria.SelectedItem;
 
-                negocio.agregar(nuevoArticulo);                
-                MessageBox.Show("Agregado exitosamente");
+                if (articulo.Id != 0)
+                {
+                    negocio.modificar(articulo);
+                    MessageBox.Show("Artículo modificado exitosamente.");
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(txtCodigo.Text) || string.IsNullOrEmpty(txtNombre.Text))
+                    {
+                        MessageBox.Show("Debe completar Código y Nombre.");
+                    }
+                    else
+                    {
+                        negocio.agregar(articulo);
+                        MessageBox.Show("Artículo agregado exitosamente.");
+                    }
+
+                }
+
                 Close();
-              
+
             }
+            catch (FormatException ex) { MessageBox.Show("Campo Precio admite solo números y no puede estar vacío."); }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.ToString());
             }
+
         }
 
         private void frmAltaArticulo_Load(object sender, EventArgs e)
         {
-            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
             MarcaNegocio marcaNegocio = new MarcaNegocio();
-
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
             try
             {
-                cboCategoria.DataSource = categoriaNegocio.listar();
                 cboMarca.DataSource = marcaNegocio.listar();
+                cboMarca.ValueMember = "Id";
+                cboMarca.DisplayMember = "Descripcion";
+                cboCategoria.DataSource = categoriaNegocio.listar();
+                cboCategoria.ValueMember = "Id";
+                cboCategoria.DisplayMember = "Descripcion";
+
+                if (articulo != null)
+                {
+                    txtCodigo.Text = articulo.Codigo.ToString();
+                    txtNombre.Text = articulo.Nombre;
+                    txtDescripcion.Text = articulo.Descripcion;
+                    cboMarca.SelectedValue = articulo.TipoMarca.Id;
+                    cboCategoria.SelectedValue = articulo.TipoCategoria.Id;
+                    txtPrecio.Text = articulo.Precio.ToString();
+                }
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
             }
         }

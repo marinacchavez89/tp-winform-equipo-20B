@@ -87,40 +87,40 @@ namespace TPWinForm_equipo_20B
 
         private void btnAgregar_MouseEnter(object sender, EventArgs e)
         {
-            btnAgregar.BackColor = Color.FromArgb(30, 144, 255);
+            btnAgregar.BackColor = Color.MediumSeaGreen;
         }
 
         private void btnAgregar_MouseLeave(object sender, EventArgs e)
         {
-            btnAgregar.BackColor = Color.Navy;
+            btnAgregar.BackColor = Color.SeaGreen;
         }
         private void btnModificar_MouseEnter(object sender, EventArgs e)
         {
-            btnModificar.BackColor = Color.FromArgb(30, 144, 255);
+            btnModificar.BackColor = Color.MediumSeaGreen;
         }
 
         private void btnModificar_MouseLeave(object sender, EventArgs e)
         {
-            btnModificar.BackColor = Color.Navy;
+            btnModificar.BackColor = Color.SeaGreen;
         }
         private void btnEliminar_MouseEnter(object sender, EventArgs e)
         {
-            btnEliminar.BackColor = Color.FromArgb(30, 144, 255);
+            btnEliminar.BackColor = Color.MediumSeaGreen;
         }
 
         private void btnEliminar_MouseLeave(object sender, EventArgs e)
         {
-            btnEliminar.BackColor = Color.Navy;
+            btnEliminar.BackColor = Color.SeaGreen;
         }
 
         private void btnSalir_MouseEnter(object sender, EventArgs e)
         {
-            btnSalir.BackColor = Color.FromArgb(30, 144, 255);
+            btnSalir.BackColor = Color.MediumSeaGreen;
         }
 
         private void btnSalir_MouseLeave(object sender, EventArgs e)
         {
-            btnSalir.BackColor = Color.Navy;
+            btnSalir.BackColor = Color.SeaGreen;
         }
 
 
@@ -134,34 +134,21 @@ namespace TPWinForm_equipo_20B
         }
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            eliminar();
+           //TODO: Martin, debes agregar los pasos de eliminar aquí, el método está en ArticuloNegocio.
         }
 
-        private void eliminar()
-        {
-            //ArticuloNegocio negocio = new ArticuloNegocio();
-            //Articulo seleccionado;
-            try
-            {
-                DialogResult respuesta = MessageBox.Show("¿De verdad querés eliminarlo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (respuesta == DialogResult.Yes)
-                {
-                    //seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+        
 
-                    //negocio.eliminar(seleccionado.Id); //falta método eliminar en clase ArticuloNegocio
-
-                    cargar();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             indiceImagenActual = (indiceImagenActual + 1) % imagenesActuales.Count;
+            cargarImagen(imagenesActuales[indiceImagenActual]);                        
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            indiceImagenActual = (indiceImagenActual - 1 + imagenesActuales.Count) % imagenesActuales.Count;
             cargarImagen(imagenesActuales[indiceImagenActual]);
         }
 
@@ -169,6 +156,15 @@ namespace TPWinForm_equipo_20B
         {
             frmAltaArticulo alta = new frmAltaArticulo();
             alta.ShowDialog();
+            cargar();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado;
+            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            frmAltaArticulo modificar = new frmAltaArticulo(seleccionado);
+            modificar.ShowDialog();
             cargar();
         }
     }

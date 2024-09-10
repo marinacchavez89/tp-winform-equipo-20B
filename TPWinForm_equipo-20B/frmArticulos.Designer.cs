@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArticulos));
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -38,13 +39,24 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvArticulos
             // 
+            this.dgvArticulos.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvArticulos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvArticulos.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvArticulos.Location = new System.Drawing.Point(18, 139);
             this.dgvArticulos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -68,7 +80,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Navy;
+            this.btnAgregar.BackColor = System.Drawing.Color.SeaGreen;
             this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -90,8 +102,8 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.Black;
-            this.lblTitulo.Location = new System.Drawing.Point(356, 45);
+            this.lblTitulo.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTitulo.Location = new System.Drawing.Point(515, 28);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(309, 45);
             this.lblTitulo.TabIndex = 5;
@@ -100,7 +112,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.BackColor = System.Drawing.Color.Navy;
+            this.btnModificar.BackColor = System.Drawing.Color.SeaGreen;
             this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -113,12 +125,13 @@
             this.btnModificar.Text = "&Modificar";
             this.btnModificar.UseCompatibleTextRendering = true;
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             this.btnModificar.MouseEnter += new System.EventHandler(this.btnModificar_MouseEnter);
             this.btnModificar.MouseLeave += new System.EventHandler(this.btnModificar_MouseLeave);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.Navy;
+            this.btnEliminar.BackColor = System.Drawing.Color.SeaGreen;
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -137,7 +150,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.Navy;
+            this.btnSalir.BackColor = System.Drawing.Color.SeaGreen;
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -156,27 +169,45 @@
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.BackColor = System.Drawing.Color.Navy;
+            this.btnSiguiente.BackColor = System.Drawing.Color.DarkGray;
             this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnSiguiente.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSiguiente.Location = new System.Drawing.Point(1084, 499);
+            this.btnSiguiente.Location = new System.Drawing.Point(1077, 499);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(112, 37);
+            this.btnSiguiente.Size = new System.Drawing.Size(39, 37);
             this.btnSiguiente.TabIndex = 6;
-            this.btnSiguiente.Text = "Si&guiente";
+            this.btnSiguiente.Text = "▶";
             this.btnSiguiente.UseCompatibleTextRendering = true;
             this.btnSiguiente.UseVisualStyleBackColor = false;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
+            // 
+            // btnAnterior
+            // 
+            this.btnAnterior.BackColor = System.Drawing.Color.DarkGray;
+            this.btnAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnterior.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnAnterior.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAnterior.Location = new System.Drawing.Point(928, 499);
+            this.btnAnterior.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(39, 37);
+            this.btnAnterior.TabIndex = 7;
+            this.btnAnterior.Text = "◀";
+            this.btnAnterior.UseCompatibleTextRendering = true;
+            this.btnAnterior.UseVisualStyleBackColor = false;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1370, 727);
+            this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
@@ -210,6 +241,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnAnterior;
     }
 }
 
