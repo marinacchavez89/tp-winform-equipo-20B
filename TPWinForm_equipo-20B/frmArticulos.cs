@@ -87,40 +87,40 @@ namespace TPWinForm_equipo_20B
 
         private void btnAgregar_MouseEnter(object sender, EventArgs e)
         {
-            btnAgregar.BackColor = Color.MediumSeaGreen;
+            btnAgregar.BackColor = Color.LightSteelBlue;
         }
 
         private void btnAgregar_MouseLeave(object sender, EventArgs e)
         {
-            btnAgregar.BackColor = Color.SeaGreen;
+            btnAgregar.BackColor = Color.SteelBlue;
         }
         private void btnModificar_MouseEnter(object sender, EventArgs e)
         {
-            btnModificar.BackColor = Color.MediumSeaGreen;
+            btnModificar.BackColor = Color.LightSteelBlue;
         }
 
         private void btnModificar_MouseLeave(object sender, EventArgs e)
         {
-            btnModificar.BackColor = Color.SeaGreen;
+            btnModificar.BackColor = Color.SteelBlue;
         }
         private void btnEliminar_MouseEnter(object sender, EventArgs e)
         {
-            btnEliminar.BackColor = Color.MediumSeaGreen;
+            btnEliminar.BackColor = Color.LightSteelBlue;
         }
 
         private void btnEliminar_MouseLeave(object sender, EventArgs e)
         {
-            btnEliminar.BackColor = Color.SeaGreen;
+            btnEliminar.BackColor = Color.SteelBlue;
         }
 
         private void btnSalir_MouseEnter(object sender, EventArgs e)
         {
-            btnSalir.BackColor = Color.MediumSeaGreen;
+            btnSalir.BackColor = Color.LightSteelBlue;
         }
 
         private void btnSalir_MouseLeave(object sender, EventArgs e)
         {
-            btnSalir.BackColor = Color.SeaGreen;
+            btnSalir.BackColor = Color.SteelBlue;
         }
 
 
@@ -161,11 +161,21 @@ namespace TPWinForm_equipo_20B
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+
             Articulo seleccionado;
-            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            frmAltaArticulo modificar = new frmAltaArticulo(seleccionado);
-            modificar.ShowDialog();
-            cargar();
+            if (dgvArticulos.CurrentRow != null)
+            {
+                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                frmAltaArticulo modificar = new frmAltaArticulo(seleccionado);
+                modificar.ShowDialog();
+                cargar();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un artículo haciendo clic en una fila de la tabla.");
+            }
+                        
+            
         }
     }
 }
