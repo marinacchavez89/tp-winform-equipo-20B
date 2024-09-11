@@ -41,6 +41,7 @@
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnVerDetalle = new System.Windows.Forms.Button();
+            this.btnAdministrarImagenes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
             this.SuspendLayout();
@@ -221,12 +222,30 @@
             this.btnVerDetalle.UseVisualStyleBackColor = false;
             this.btnVerDetalle.Click += new System.EventHandler(this.btnVerDetalle_Click);
             // 
+            // btnAdministrarImagenes
+            // 
+            this.btnAdministrarImagenes.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnAdministrarImagenes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdministrarImagenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdministrarImagenes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministrarImagenes.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAdministrarImagenes.Location = new System.Drawing.Point(1204, 76);
+            this.btnAdministrarImagenes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdministrarImagenes.Name = "btnAdministrarImagenes";
+            this.btnAdministrarImagenes.Size = new System.Drawing.Size(137, 51);
+            this.btnAdministrarImagenes.TabIndex = 9;
+            this.btnAdministrarImagenes.Text = "Administrar Imagenes";
+            this.btnAdministrarImagenes.UseCompatibleTextRendering = true;
+            this.btnAdministrarImagenes.UseVisualStyleBackColor = false;
+            this.btnAdministrarImagenes.Click += new System.EventHandler(this.btnAdministrarImagenes_Click);
+            // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1370, 727);
+            this.Controls.Add(this.btnAdministrarImagenes);
             this.Controls.Add(this.btnVerDetalle);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnSiguiente);
@@ -265,6 +284,7 @@
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnVerDetalle;
+        private System.Windows.Forms.Button btnAdministrarImagenes;
     }
 }
 

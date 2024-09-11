@@ -224,5 +224,19 @@ namespace TPWinForm_equipo_20B
                 MessageBox.Show("Seleccione un artículo haciendo clic en una fila de la tabla.", "Detalle", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnAdministrarImagenes_Click(object sender, EventArgs e)
+        {
+            if(dgvArticulos.SelectedCells.Count > 0)
+            {
+                int idArticulo = (int)dgvArticulos.SelectedRows[0].Cells["Id"].Value;
+                frmAdministrarImagenes formImagenes = new frmAdministrarImagenes(idArticulo);
+                formImagenes.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo rimero.");
+            }
+        }
     }
 }
