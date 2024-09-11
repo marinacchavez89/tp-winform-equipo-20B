@@ -47,12 +47,21 @@ namespace TPWinForm_equipo_20B
                 articulo.TipoMarca = (Marca)cboMarcaDetalle.SelectedItem;
                 articulo.TipoCategoria = (Categoria)cboCategoria.SelectedItem;
 
-                DialogResult respuesta; 
+                DialogResult respuesta;
+                DialogResult confirmarModificar;
 
                 if (articulo.Id != 0)
-                {   
-                    negocio.modificar(articulo);
-                    respuesta = MessageBox.Show("Artículo modificado exitosamente.", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                {
+                    confirmarModificar = MessageBox.Show("¿Esta seguro de modificar el articulo?", "Modificar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    if(confirmarModificar == DialogResult.Yes)
+                    {
+                        negocio.modificar(articulo);
+                        respuesta = MessageBox.Show("Artículo modificado exitosamente.", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        return;
+                    }                  
                 }
                 else
                 {

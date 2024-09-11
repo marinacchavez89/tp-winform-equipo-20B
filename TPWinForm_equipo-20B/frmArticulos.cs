@@ -187,13 +187,12 @@ namespace TPWinForm_equipo_20B
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            Articulo seleccionado;
-            DialogResult respuesta = MessageBox.Show("¿Desea modificar el artículo seleccionado de forma permanente?", "Modificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            if (respuesta == DialogResult.OK && dgvArticulos.CurrentRow != null)
+            Articulo seleccionado;            
+            if (dgvArticulos.CurrentRow != null)
             {
-                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem; 
                 frmAltaArticulo modificar = new frmAltaArticulo(seleccionado);
-                modificar.ShowDialog();
+                modificar.ShowDialog();                
                 cargar();
             }
             else

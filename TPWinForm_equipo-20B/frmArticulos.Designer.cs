@@ -263,7 +263,6 @@
             this.Name = "frmArticulos";
             this.Text = "Gestor de Artículos";
             this.Load += new System.EventHandler(this.frmArticulos_Load);
-            this.Click += new System.EventHandler(this.btnVerDetalle_Click);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).EndInit();
             this.ResumeLayout(false);
