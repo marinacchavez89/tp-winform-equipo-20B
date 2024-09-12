@@ -1,4 +1,5 @@
 ﻿using dominio;
+using negocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,7 +35,32 @@ namespace TPWinForm_equipo_20B
 
             try
             {
-                
+                AccesoDatos datos = new AccesoDatos();
+                //List<Imagen> listaImagenes = new List<Imagen>();
+
+                try
+                {
+                    string consulta = "SELECT ImagenUrl FROM Imagenes WHERE IdArticulo = @idArticulo";
+                    datos.setearConsulta(consulta);
+                    datos.setearParametro("@idArticulo", seleccionado.Id);
+                    datos.ejecutarLectura();
+
+                    while (datos.Lector.Read())
+                    {
+                        Imagen img = new Imagen();
+                        img.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                        imagenesActuales.Add(img.ImagenUrl);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al cargar imágenes: " + ex.Message);
+                }
+                finally
+                {
+                    datos.cerrarConexion();
+                }                
+
                 foreach (Imagen img in seleccionado.ImagenArticulo)
                 {
                     imagenesActuales.Add(img.ImagenUrl);
