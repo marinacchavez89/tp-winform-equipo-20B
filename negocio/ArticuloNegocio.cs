@@ -194,7 +194,7 @@ namespace negocio
                         }
                         break;
 
-                    case "Codigo":
+                    case "Código":
                         switch (criterio)
                         {
                             case "Comienza con":
@@ -209,7 +209,7 @@ namespace negocio
                         }
                         break;
 
-                    default:
+                    case "Nombre":
                         switch (criterio)
                         {
                             case "Comienza con":
@@ -222,6 +222,8 @@ namespace negocio
                                 consulta += "Nombre like '%" + filtro + "%'";
                                 break;
                         }
+                        break;
+                    default:
                         break;
                 }
 

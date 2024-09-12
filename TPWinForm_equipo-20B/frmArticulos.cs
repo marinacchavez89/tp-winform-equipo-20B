@@ -25,9 +25,9 @@ namespace TPWinForm_equipo_20B
         private void frmArticulos_Load(object sender, EventArgs e)
         {
             cargar();
-            cboCampo.Items.Add("Número");
-            cboCampo.Items.Add("Nombre");
-            cboCampo.Items.Add("Descripción");
+            cboCampo.Items.Add("Precio");
+            cboCampo.Items.Add("Código");
+            cboCampo.Items.Add("Nombre");            
         }
 
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
@@ -237,7 +237,7 @@ namespace TPWinForm_equipo_20B
             }
             else
             {
-                MessageBox.Show("Debe seleccionar un articulo rimero.");
+                MessageBox.Show("Debe seleccionar un articulo primero.");
             }
         }
 
@@ -246,6 +246,8 @@ namespace TPWinForm_equipo_20B
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
+                if (validarFiltro())
+                    return;
                 string campo = cboCampo.SelectedItem.ToString();
                 string criterio = cboCriterio.SelectedItem.ToString();
                 string filtro = txtFiltro.Text;
@@ -260,7 +262,7 @@ namespace TPWinForm_equipo_20B
         private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
         {
             string opcion = cboCampo.SelectedItem.ToString();
-            if (opcion == "Número")
+            if (opcion == "Precio")
             {
                 cboCriterio.Items.Clear();
                 cboCriterio.Items.Add("Mayor a");
@@ -274,6 +276,51 @@ namespace TPWinForm_equipo_20B
                 cboCriterio.Items.Add("Termina con");
                 cboCriterio.Items.Add("Contiene");
             }
+        }
+
+        private bool soloNumeros(string cadena)
+        {
+            foreach (char caracter in cadena)
+            {
+                if (!(char.IsNumber(caracter)))
+                    return false;
+            }
+
+            return true;
+        }
+
+        private bool validarFiltro()
+        {
+            if (cboCampo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Seleccione un campo para filtrar, por favor.", "Filtro", MessageBoxButtons.OK, MessageBoxIcon.Information);             
+                return true;
+            }
+            if (cboCriterio.SelectedIndex < 0)
+            {
+                MessageBox.Show("Seleccione el criterio para filtrar, por favor.", "Filtro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+            }
+            if (cboCampo.SelectedItem.ToString() == "Precio")
+            {
+                if (string.IsNullOrEmpty(txtFiltro.Text))
+                {
+                    MessageBox.Show("Debes elegir una opción para filtrar por Precio, por favor.", "Filtro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return true;
+                }
+                if (!(soloNumeros(txtFiltro.Text)))
+                {
+                    MessageBox.Show("Ingrese solo números para filtrar por Precio, por favor.", "Filtro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void btnEliminarImagen_Click(object sender, EventArgs e)
+        {
+            //Aca eliminar imagen del articulo seleccionado.
         }
     }
 }
