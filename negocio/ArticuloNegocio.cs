@@ -260,5 +260,58 @@ namespace negocio
                 throw ex;
             }
         }
-    }
+
+        public void eliminarImagen(int idImagen)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("DELETE FROM imagenes WHERE Id = @idImagen");
+                datos.setearParametro("@idImagen", idImagen);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public List<Imagen> listarImagenesPorArticulo(int idArticulo)
+        {
+            List<Imagen> listaImagenes = new List<Imagen>();
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("SELECT Id, ImagenUrl FROM imagenes WHERE IdArticulo = @idArticulo");
+                datos.setearParametro("@idArticulo", idArticulo);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Imagen imagen = new Imagen();
+                    imagen.Id = (int)datos.Lector["Id"];
+                    imagen.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+
+                    listaImagenes.Add(imagen);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+            return listaImagenes;
+
+        }
+
+     }
 }

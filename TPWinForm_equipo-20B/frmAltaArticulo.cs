@@ -80,7 +80,7 @@ namespace TPWinForm_equipo_20B
                 Close();
 
             }
-            catch (FormatException ex) { MessageBox.Show("Campo Precio admite solo números y no puede estar vacío."); }
+            catch (FormatException ex) { MessageBox.Show("Campo Precio admite solo números y no puede estar vacío.", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
             catch (Exception ex)
             {
 

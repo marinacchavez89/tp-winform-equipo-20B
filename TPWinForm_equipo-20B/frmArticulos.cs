@@ -89,6 +89,11 @@ namespace TPWinForm_equipo_20B
             }
         }
 
+        public void RecargarDatos()
+        {
+            cargar();          
+        }
+
         private void ocultarColumnas()
         {
             dgvArticulos.Columns["Id"].Visible = false;
@@ -249,7 +254,21 @@ namespace TPWinForm_equipo_20B
             if(dgvArticulos.SelectedCells.Count > 0)
             {
                 int idArticulo = (int)dgvArticulos.SelectedRows[0].Cells["Id"].Value;
-                frmAdministrarImagenes formImagenes = new frmAdministrarImagenes(idArticulo);
+                frmAdministrarImagenes formImagenes = new frmAdministrarImagenes(idArticulo, this);
+                formImagenes.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un articulo primero.");
+            }
+        }
+
+        private void btnEliminarImagen_Click(object sender, EventArgs e)
+        {
+            if (dgvArticulos.SelectedCells.Count > 0)
+            {
+                int idArticulo = (int)dgvArticulos.SelectedRows[0].Cells["Id"].Value;
+                frmAdministrarImagenes formImagenes = new frmAdministrarImagenes(idArticulo, this);
                 formImagenes.ShowDialog();
             }
             else
@@ -335,11 +354,6 @@ namespace TPWinForm_equipo_20B
             }
 
             return false;
-        }
-
-        private void btnEliminarImagen_Click(object sender, EventArgs e)
-        {
-            //Aca eliminar imagen del articulo seleccionado.
-        }
+        }        
     }
 }
