@@ -15,6 +15,7 @@ namespace TPWinForm_equipo_20B
     public partial class frmArticulos : Form
     {
         private List<Articulo> listaArticulo;
+        private List<Articulo> listaArticulosFiltrada;
         private List<string> imagenesActuales;
         private int indiceImagenActual;
         public frmArticulos()
@@ -61,8 +62,24 @@ namespace TPWinForm_equipo_20B
             try
             {
                 ArticuloNegocio negocio = new ArticuloNegocio();
-                listaArticulo = negocio.listar();               
+                listaArticulo = negocio.listar();
                 dgvArticulos.DataSource = listaArticulo;
+                ocultarColumnas();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void cargar(List<Articulo> listaArticulos)
+        {
+            try
+            {
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                listaArticulos = negocio.listar();
+                dgvArticulos.DataSource = listaArticulos;
                 ocultarColumnas();
             }
             catch (Exception ex)
@@ -251,7 +268,9 @@ namespace TPWinForm_equipo_20B
                 string campo = cboCampo.SelectedItem.ToString();
                 string criterio = cboCriterio.SelectedItem.ToString();
                 string filtro = txtFiltro.Text;
-                dgvArticulos.DataSource = negocio.filtrar(campo, criterio, filtro);
+                listaArticulosFiltrada = negocio.filtrar(campo, criterio, filtro);
+                dgvArticulos.DataSource = listaArticulosFiltrada;
+                cargar(listaArticulosFiltrada);
             }
             catch (Exception ex)
             {
