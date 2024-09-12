@@ -25,7 +25,7 @@ namespace TPWinForm_equipo_20B
 
         private void frmArticulos_Load(object sender, EventArgs e)
         {
-            cargar();      
+            cargar();
             cboCampo.Items.Add("Precio");
             cboCampo.Items.Add("Código");
             cboCampo.Items.Add("Nombre");            
@@ -35,13 +35,24 @@ namespace TPWinForm_equipo_20B
         {
             try
             {
+                imagenesActuales = new List<string>();
+                indiceImagenActual = 0;
+
                 if (dgvArticulos.CurrentRow != null)
                 {
                     Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                    imagenesActuales = new List<String>();
-                    foreach (Imagen img in seleccionado.ImagenArticulo)
+                    ArticuloNegocio negocio = new ArticuloNegocio();
+
+                    List<Imagen> listaImagenesArticulo = negocio.listarImagenesPorArticulo(seleccionado.Id);
+
+                    foreach (Imagen img in listaImagenesArticulo)
                     {
                         imagenesActuales.Add(img.ImagenUrl);
+                    }
+
+                    if (imagenesActuales.Count > 0)
+                    {
+                        cargarImagen(imagenesActuales[indiceImagenActual]);
                     }
 
                     indiceImagenActual = 0;

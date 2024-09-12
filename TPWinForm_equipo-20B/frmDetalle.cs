@@ -35,36 +35,14 @@ namespace TPWinForm_equipo_20B
 
             try
             {
-                AccesoDatos datos = new AccesoDatos();
-                //List<Imagen> listaImagenes = new List<Imagen>();
+                ArticuloNegocio negocio = new ArticuloNegocio();                
+                
+                List<Imagen> listaImagenesArticulo  = negocio.listarImagenesPorArticulo(seleccionado.Id);
 
-                try
-                {
-                    string consulta = "SELECT ImagenUrl FROM Imagenes WHERE IdArticulo = @idArticulo";
-                    datos.setearConsulta(consulta);
-                    datos.setearParametro("@idArticulo", seleccionado.Id);
-                    datos.ejecutarLectura();
-
-                    while (datos.Lector.Read())
-                    {
-                        Imagen img = new Imagen();
-                        img.ImagenUrl = (string)datos.Lector["ImagenUrl"];
-                        imagenesActuales.Add(img.ImagenUrl);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al cargar imágenes: " + ex.Message);
-                }
-                finally
-                {
-                    datos.cerrarConexion();
-                }                
-
-                foreach (Imagen img in seleccionado.ImagenArticulo)
+                foreach (Imagen img in listaImagenesArticulo)
                 {
                     imagenesActuales.Add(img.ImagenUrl);
-                }
+                }              
                
                 if (imagenesActuales.Count > 0)
                 {
