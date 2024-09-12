@@ -78,7 +78,6 @@ namespace TPWinForm_equipo_20B
             try
             {
                 ArticuloNegocio negocio = new ArticuloNegocio();
-                listaArticulos = negocio.listar();
                 dgvArticulos.DataSource = listaArticulos;
                 ocultarColumnas();
             }
