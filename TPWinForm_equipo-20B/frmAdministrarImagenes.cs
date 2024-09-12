@@ -29,7 +29,7 @@ namespace TPWinForm_equipo_20B
                 {
                     datos.setearConsulta("INSERT INTO IMAGENES (IdArticulo, ImagenUrl) VALUES (" + idArticulo + ", '" + txtUrlImagen.Text + "')");
                     datos.ejecutarAccion();
-                    MessageBox.Show("Imagen agregada correctamente");
+                    MessageBox.Show("Imagen agregada correctamente");                 
                     this.Close();
                 }
                 catch (Exception ex)
@@ -46,6 +46,6 @@ namespace TPWinForm_equipo_20B
             {
                 MessageBox.Show("Ingresa una URL valida");
             }
-        }
+        }        
     }
 }

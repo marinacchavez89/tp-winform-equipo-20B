@@ -25,7 +25,7 @@ namespace TPWinForm_equipo_20B
 
         private void frmArticulos_Load(object sender, EventArgs e)
         {
-            cargar();
+            cargar();      
             cboCampo.Items.Add("Precio");
             cboCampo.Items.Add("Código");
             cboCampo.Items.Add("Nombre");            
