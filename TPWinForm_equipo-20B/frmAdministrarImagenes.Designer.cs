@@ -51,7 +51,7 @@
             this.btnAgregarImagen.Location = new System.Drawing.Point(298, 296);
             this.btnAgregarImagen.Name = "btnAgregarImagen";
             this.btnAgregarImagen.Size = new System.Drawing.Size(81, 23);
-            this.btnAgregarImagen.TabIndex = 0;
+            this.btnAgregarImagen.TabIndex = 3;
             this.btnAgregarImagen.Text = "Agregar";
             this.btnAgregarImagen.UseVisualStyleBackColor = false;
             this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
@@ -61,7 +61,7 @@
             this.txtUrlImagen.Location = new System.Drawing.Point(92, 270);
             this.txtUrlImagen.Name = "txtUrlImagen";
             this.txtUrlImagen.Size = new System.Drawing.Size(468, 20);
-            this.txtUrlImagen.TabIndex = 1;
+            this.txtUrlImagen.TabIndex = 2;
             // 
             // labelUrlImagen
             // 
@@ -83,7 +83,7 @@
             this.btnEliminarImagen.Location = new System.Drawing.Point(546, 186);
             this.btnEliminarImagen.Name = "btnEliminarImagen";
             this.btnEliminarImagen.Size = new System.Drawing.Size(81, 23);
-            this.btnEliminarImagen.TabIndex = 3;
+            this.btnEliminarImagen.TabIndex = 1;
             this.btnEliminarImagen.Text = "Eliminar";
             this.btnEliminarImagen.UseVisualStyleBackColor = false;
             this.btnEliminarImagen.Click += new System.EventHandler(this.btnEliminarImagen_Click);
@@ -115,7 +115,7 @@
             this.dgvImagenes.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvImagenes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvImagenes.Size = new System.Drawing.Size(468, 150);
-            this.dgvImagenes.TabIndex = 4;
+            this.dgvImagenes.TabIndex = 0;
             this.dgvImagenes.SelectionChanged += new System.EventHandler(this.dgvImagenes_SelectionChanged);
             // 
             // pbxImagenAdmin

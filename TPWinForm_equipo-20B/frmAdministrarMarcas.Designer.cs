@@ -70,7 +70,7 @@
             this.btnAgregarMarca.Location = new System.Drawing.Point(184, 383);
             this.btnAgregarMarca.Name = "btnAgregarMarca";
             this.btnAgregarMarca.Size = new System.Drawing.Size(81, 23);
-            this.btnAgregarMarca.TabIndex = 1;
+            this.btnAgregarMarca.TabIndex = 4;
             this.btnAgregarMarca.Text = "Agregar";
             this.btnAgregarMarca.UseVisualStyleBackColor = false;
             this.btnAgregarMarca.Click += new System.EventHandler(this.btnAgregarMarca_Click);
@@ -85,7 +85,7 @@
             this.btnEliminarMarca.Location = new System.Drawing.Point(278, 236);
             this.btnEliminarMarca.Name = "btnEliminarMarca";
             this.btnEliminarMarca.Size = new System.Drawing.Size(81, 23);
-            this.btnEliminarMarca.TabIndex = 4;
+            this.btnEliminarMarca.TabIndex = 1;
             this.btnEliminarMarca.Text = "Eliminar";
             this.btnEliminarMarca.UseVisualStyleBackColor = false;
             this.btnEliminarMarca.Click += new System.EventHandler(this.btnEliminarMarca_Click);
@@ -100,7 +100,7 @@
             this.btnModificarMarca.Location = new System.Drawing.Point(93, 236);
             this.btnModificarMarca.Name = "btnModificarMarca";
             this.btnModificarMarca.Size = new System.Drawing.Size(81, 23);
-            this.btnModificarMarca.TabIndex = 5;
+            this.btnModificarMarca.TabIndex = 2;
             this.btnModificarMarca.Text = "Modificar";
             this.btnModificarMarca.UseVisualStyleBackColor = false;
             this.btnModificarMarca.Click += new System.EventHandler(this.btnModificarMarca_Click);
@@ -120,7 +120,7 @@
             this.txtAgregarMarca.Location = new System.Drawing.Point(93, 357);
             this.txtAgregarMarca.Name = "txtAgregarMarca";
             this.txtAgregarMarca.Size = new System.Drawing.Size(266, 20);
-            this.txtAgregarMarca.TabIndex = 7;
+            this.txtAgregarMarca.TabIndex = 3;
             // 
             // frmAdministrarMarcas
             // 

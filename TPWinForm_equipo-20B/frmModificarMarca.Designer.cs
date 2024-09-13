@@ -48,7 +48,7 @@
             this.txtDescripcionMarca.Location = new System.Drawing.Point(156, 73);
             this.txtDescripcionMarca.Name = "txtDescripcionMarca";
             this.txtDescripcionMarca.Size = new System.Drawing.Size(100, 20);
-            this.txtDescripcionMarca.TabIndex = 1;
+            this.txtDescripcionMarca.TabIndex = 0;
             // 
             // btnModificarMarcaAceptar
             // 
@@ -57,10 +57,10 @@
             this.btnModificarMarcaAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarMarcaAceptar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarMarcaAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnModificarMarcaAceptar.Location = new System.Drawing.Point(87, 202);
+            this.btnModificarMarcaAceptar.Location = new System.Drawing.Point(175, 191);
             this.btnModificarMarcaAceptar.Name = "btnModificarMarcaAceptar";
             this.btnModificarMarcaAceptar.Size = new System.Drawing.Size(81, 23);
-            this.btnModificarMarcaAceptar.TabIndex = 6;
+            this.btnModificarMarcaAceptar.TabIndex = 2;
             this.btnModificarMarcaAceptar.Text = "Aceptar";
             this.btnModificarMarcaAceptar.UseVisualStyleBackColor = false;
             this.btnModificarMarcaAceptar.Click += new System.EventHandler(this.btnModificarMarcaAceptar_Click);
@@ -72,10 +72,10 @@
             this.btnModificarMarcaCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarMarcaCancelar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarMarcaCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnModificarMarcaCancelar.Location = new System.Drawing.Point(201, 202);
+            this.btnModificarMarcaCancelar.Location = new System.Drawing.Point(69, 191);
             this.btnModificarMarcaCancelar.Name = "btnModificarMarcaCancelar";
             this.btnModificarMarcaCancelar.Size = new System.Drawing.Size(81, 23);
-            this.btnModificarMarcaCancelar.TabIndex = 7;
+            this.btnModificarMarcaCancelar.TabIndex = 1;
             this.btnModificarMarcaCancelar.Text = "Cancelar";
             this.btnModificarMarcaCancelar.UseVisualStyleBackColor = false;
             this.btnModificarMarcaCancelar.Click += new System.EventHandler(this.btnModificarMarcaCancelar_Click);

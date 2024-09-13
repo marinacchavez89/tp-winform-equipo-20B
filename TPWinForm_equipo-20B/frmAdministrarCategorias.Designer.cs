@@ -44,7 +44,7 @@
             this.txtAgregarCategoria.Location = new System.Drawing.Point(99, 354);
             this.txtAgregarCategoria.Name = "txtAgregarCategoria";
             this.txtAgregarCategoria.Size = new System.Drawing.Size(254, 20);
-            this.txtAgregarCategoria.TabIndex = 13;
+            this.txtAgregarCategoria.TabIndex = 3;
             // 
             // labelAdmCategorias
             // 
@@ -66,7 +66,7 @@
             this.btnModificarCategoria.Location = new System.Drawing.Point(99, 239);
             this.btnModificarCategoria.Name = "btnModificarCategoria";
             this.btnModificarCategoria.Size = new System.Drawing.Size(81, 23);
-            this.btnModificarCategoria.TabIndex = 11;
+            this.btnModificarCategoria.TabIndex = 2;
             this.btnModificarCategoria.Text = "Modificar";
             this.btnModificarCategoria.UseVisualStyleBackColor = false;
             this.btnModificarCategoria.Click += new System.EventHandler(this.btnModificarCategoria_Click_1);
@@ -81,7 +81,7 @@
             this.btnEliminarCategoria.Location = new System.Drawing.Point(272, 239);
             this.btnEliminarCategoria.Name = "btnEliminarCategoria";
             this.btnEliminarCategoria.Size = new System.Drawing.Size(81, 23);
-            this.btnEliminarCategoria.TabIndex = 10;
+            this.btnEliminarCategoria.TabIndex = 1;
             this.btnEliminarCategoria.Text = "Eliminar";
             this.btnEliminarCategoria.UseVisualStyleBackColor = false;
             this.btnEliminarCategoria.Click += new System.EventHandler(this.btnEliminarCategoria_Click_1);
@@ -96,7 +96,7 @@
             this.btnAgregarCategoria.Location = new System.Drawing.Point(192, 380);
             this.btnAgregarCategoria.Name = "btnAgregarCategoria";
             this.btnAgregarCategoria.Size = new System.Drawing.Size(81, 23);
-            this.btnAgregarCategoria.TabIndex = 9;
+            this.btnAgregarCategoria.TabIndex = 4;
             this.btnAgregarCategoria.Text = "Agregar";
             this.btnAgregarCategoria.UseVisualStyleBackColor = false;
             this.btnAgregarCategoria.Click += new System.EventHandler(this.btnAgregarCategoria_Click_1);
@@ -120,7 +120,7 @@
             this.dgvCategorias.ReadOnly = true;
             this.dgvCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCategorias.Size = new System.Drawing.Size(254, 187);
-            this.dgvCategorias.TabIndex = 8;
+            this.dgvCategorias.TabIndex = 0;
             // 
             // frmAdministrarCategorias
             // 

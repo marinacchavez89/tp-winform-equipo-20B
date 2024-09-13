@@ -41,10 +41,10 @@
             this.btnModificarCategoriaCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarCategoriaCancelar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCategoriaCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnModificarCategoriaCancelar.Location = new System.Drawing.Point(204, 194);
+            this.btnModificarCategoriaCancelar.Location = new System.Drawing.Point(72, 191);
             this.btnModificarCategoriaCancelar.Name = "btnModificarCategoriaCancelar";
             this.btnModificarCategoriaCancelar.Size = new System.Drawing.Size(81, 23);
-            this.btnModificarCategoriaCancelar.TabIndex = 11;
+            this.btnModificarCategoriaCancelar.TabIndex = 1;
             this.btnModificarCategoriaCancelar.Text = "Cancelar";
             this.btnModificarCategoriaCancelar.UseVisualStyleBackColor = false;
             this.btnModificarCategoriaCancelar.Click += new System.EventHandler(this.btnModificarCategoriaCancelar_Click_1);
@@ -56,10 +56,10 @@
             this.btnModificarCategoriaAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarCategoriaAceptar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCategoriaAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnModificarCategoriaAceptar.Location = new System.Drawing.Point(90, 194);
+            this.btnModificarCategoriaAceptar.Location = new System.Drawing.Point(178, 191);
             this.btnModificarCategoriaAceptar.Name = "btnModificarCategoriaAceptar";
             this.btnModificarCategoriaAceptar.Size = new System.Drawing.Size(81, 23);
-            this.btnModificarCategoriaAceptar.TabIndex = 10;
+            this.btnModificarCategoriaAceptar.TabIndex = 2;
             this.btnModificarCategoriaAceptar.Text = "Aceptar";
             this.btnModificarCategoriaAceptar.UseVisualStyleBackColor = false;
             this.btnModificarCategoriaAceptar.Click += new System.EventHandler(this.btnModificarCategoriaAceptar_Click_1);
@@ -69,7 +69,7 @@
             this.txtDescripcionCategoria.Location = new System.Drawing.Point(159, 65);
             this.txtDescripcionCategoria.Name = "txtDescripcionCategoria";
             this.txtDescripcionCategoria.Size = new System.Drawing.Size(100, 20);
-            this.txtDescripcionCategoria.TabIndex = 9;
+            this.txtDescripcionCategoria.TabIndex = 0;
             // 
             // lblDescripcionCategoria
             // 

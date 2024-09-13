@@ -54,7 +54,7 @@
             this.txtPrecioDetalle.Name = "txtPrecioDetalle";
             this.txtPrecioDetalle.ReadOnly = true;
             this.txtPrecioDetalle.Size = new System.Drawing.Size(229, 20);
-            this.txtPrecioDetalle.TabIndex = 25;
+            this.txtPrecioDetalle.TabIndex = 4;
             // 
             // lblPrecio
             // 
@@ -92,7 +92,7 @@
             this.txtNombreDetalle.Name = "txtNombreDetalle";
             this.txtNombreDetalle.ReadOnly = true;
             this.txtNombreDetalle.Size = new System.Drawing.Size(230, 20);
-            this.txtNombreDetalle.TabIndex = 21;
+            this.txtNombreDetalle.TabIndex = 1;
             // 
             // txtDescripcionDetalle
             // 
@@ -101,7 +101,7 @@
             this.txtDescripcionDetalle.Name = "txtDescripcionDetalle";
             this.txtDescripcionDetalle.ReadOnly = true;
             this.txtDescripcionDetalle.Size = new System.Drawing.Size(323, 99);
-            this.txtDescripcionDetalle.TabIndex = 20;
+            this.txtDescripcionDetalle.TabIndex = 5;
             // 
             // txtCodigo
             // 
@@ -109,7 +109,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(229, 20);
-            this.txtCodigo.TabIndex = 19;
+            this.txtCodigo.TabIndex = 0;
             // 
             // lblDescripcion
             // 
@@ -147,7 +147,7 @@
             this.txtMarcaDetalle.Name = "txtMarcaDetalle";
             this.txtMarcaDetalle.ReadOnly = true;
             this.txtMarcaDetalle.Size = new System.Drawing.Size(230, 20);
-            this.txtMarcaDetalle.TabIndex = 26;
+            this.txtMarcaDetalle.TabIndex = 2;
             // 
             // txtCategoriaDetalle
             // 
@@ -155,7 +155,7 @@
             this.txtCategoriaDetalle.Name = "txtCategoriaDetalle";
             this.txtCategoriaDetalle.ReadOnly = true;
             this.txtCategoriaDetalle.Size = new System.Drawing.Size(230, 20);
-            this.txtCategoriaDetalle.TabIndex = 27;
+            this.txtCategoriaDetalle.TabIndex = 3;
             // 
             // pbxImagenDetalle
             // 
@@ -177,7 +177,7 @@
             this.btnCerrarDetalle.Location = new System.Drawing.Point(710, 390);
             this.btnCerrarDetalle.Name = "btnCerrarDetalle";
             this.btnCerrarDetalle.Size = new System.Drawing.Size(117, 34);
-            this.btnCerrarDetalle.TabIndex = 29;
+            this.btnCerrarDetalle.TabIndex = 8;
             this.btnCerrarDetalle.Text = "Aceptar";
             this.btnCerrarDetalle.UseVisualStyleBackColor = false;
             this.btnCerrarDetalle.Click += new System.EventHandler(this.btnCerrarDetalle_Click);
@@ -194,7 +194,7 @@
             this.btnAnteriorDetalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAnteriorDetalle.Name = "btnAnteriorDetalle";
             this.btnAnteriorDetalle.Size = new System.Drawing.Size(39, 37);
-            this.btnAnteriorDetalle.TabIndex = 31;
+            this.btnAnteriorDetalle.TabIndex = 6;
             this.btnAnteriorDetalle.Text = "◀";
             this.btnAnteriorDetalle.UseCompatibleTextRendering = true;
             this.btnAnteriorDetalle.UseVisualStyleBackColor = false;
@@ -212,7 +212,7 @@
             this.btnSiguienteDetalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSiguienteDetalle.Name = "btnSiguienteDetalle";
             this.btnSiguienteDetalle.Size = new System.Drawing.Size(39, 37);
-            this.btnSiguienteDetalle.TabIndex = 30;
+            this.btnSiguienteDetalle.TabIndex = 7;
             this.btnSiguienteDetalle.Text = "▶";
             this.btnSiguienteDetalle.UseCompatibleTextRendering = true;
             this.btnSiguienteDetalle.UseVisualStyleBackColor = false;
