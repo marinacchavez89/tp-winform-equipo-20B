@@ -38,7 +38,7 @@ namespace TPWinForm_equipo_20B
 
             negocio.modificar(seleccionado);
 
-            MessageBox.Show("Artículo modificado exitosamente");
+            MessageBox.Show("Marca modificada exitosamente");
             Close();
         }
     }

@@ -85,7 +85,7 @@ namespace TPWinForm_equipo_20B
             }
             else
             {
-                MessageBox.Show("Seleccione un marca haciendo clic en una fila de la tabla.");
+                MessageBox.Show("Seleccione una marca haciendo clic en una fila de la tabla.");
             }
 
         }

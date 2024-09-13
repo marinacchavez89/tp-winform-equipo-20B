@@ -103,3 +103,5 @@ C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winf
 C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.pdb
 C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmAdministrarMarcas.resources
 C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmModificarMarca.resources
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmAdministrarCategorias.resources
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmModificarCategoria.resources

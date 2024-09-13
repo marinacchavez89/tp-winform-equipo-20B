@@ -371,5 +371,11 @@ namespace TPWinForm_equipo_20B
             frmAdministrarMarcas marca = new frmAdministrarMarcas();
             marca.ShowDialog();
         }
+
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAdministrarCategorias categoria = new frmAdministrarCategorias();
+            categoria.ShowDialog();
+        }
     }
 }

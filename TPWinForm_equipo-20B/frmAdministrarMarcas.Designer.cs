@@ -32,7 +32,7 @@
             this.btnAgregarMarca = new System.Windows.Forms.Button();
             this.btnEliminarMarca = new System.Windows.Forms.Button();
             this.btnModificarMarca = new System.Windows.Forms.Button();
-            this.labelUrlImagen = new System.Windows.Forms.Label();
+            this.labelAdmMarcas = new System.Windows.Forms.Label();
             this.txtAgregarMarca = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcas)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +69,7 @@
             this.btnEliminarMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarMarca.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarMarca.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarMarca.Location = new System.Drawing.Point(168, 223);
+            this.btnEliminarMarca.Location = new System.Drawing.Point(178, 223);
             this.btnEliminarMarca.Name = "btnEliminarMarca";
             this.btnEliminarMarca.Size = new System.Drawing.Size(81, 23);
             this.btnEliminarMarca.TabIndex = 4;
@@ -92,15 +92,15 @@
             this.btnModificarMarca.UseVisualStyleBackColor = false;
             this.btnModificarMarca.Click += new System.EventHandler(this.btnModificarMarca_Click);
             // 
-            // labelUrlImagen
+            // labelAdmMarcas
             // 
-            this.labelUrlImagen.AutoSize = true;
-            this.labelUrlImagen.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUrlImagen.Location = new System.Drawing.Point(164, 282);
-            this.labelUrlImagen.Name = "labelUrlImagen";
-            this.labelUrlImagen.Size = new System.Drawing.Size(241, 21);
-            this.labelUrlImagen.TabIndex = 6;
-            this.labelUrlImagen.Text = "Ingrese la Marca que desea agregar:";
+            this.labelAdmMarcas.AutoSize = true;
+            this.labelAdmMarcas.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAdmMarcas.Location = new System.Drawing.Point(164, 282);
+            this.labelAdmMarcas.Name = "labelAdmMarcas";
+            this.labelAdmMarcas.Size = new System.Drawing.Size(241, 21);
+            this.labelAdmMarcas.TabIndex = 6;
+            this.labelAdmMarcas.Text = "Ingrese la Marca que desea agregar:";
             // 
             // txtAgregarMarca
             // 
@@ -115,7 +115,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 384);
             this.Controls.Add(this.txtAgregarMarca);
-            this.Controls.Add(this.labelUrlImagen);
+            this.Controls.Add(this.labelAdmMarcas);
             this.Controls.Add(this.btnModificarMarca);
             this.Controls.Add(this.btnEliminarMarca);
             this.Controls.Add(this.btnAgregarMarca);
@@ -136,7 +136,7 @@
         private System.Windows.Forms.Button btnAgregarMarca;
         private System.Windows.Forms.Button btnEliminarMarca;
         private System.Windows.Forms.Button btnModificarMarca;
-        private System.Windows.Forms.Label labelUrlImagen;
+        private System.Windows.Forms.Label labelAdmMarcas;
         private System.Windows.Forms.TextBox txtAgregarMarca;
     }
 }
