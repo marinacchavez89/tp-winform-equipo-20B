@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdministrarCategorias));
             this.txtAgregarCategoria = new System.Windows.Forms.TextBox();
             this.labelAdmCategorias = new System.Windows.Forms.Label();
             this.btnModificarCategoria = new System.Windows.Forms.Button();
@@ -39,16 +41,16 @@
             // 
             // txtAgregarCategoria
             // 
-            this.txtAgregarCategoria.Location = new System.Drawing.Point(170, 286);
+            this.txtAgregarCategoria.Location = new System.Drawing.Point(99, 354);
             this.txtAgregarCategoria.Name = "txtAgregarCategoria";
-            this.txtAgregarCategoria.Size = new System.Drawing.Size(334, 20);
+            this.txtAgregarCategoria.Size = new System.Drawing.Size(254, 20);
             this.txtAgregarCategoria.TabIndex = 13;
             // 
             // labelAdmCategorias
             // 
             this.labelAdmCategorias.AutoSize = true;
             this.labelAdmCategorias.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAdmCategorias.Location = new System.Drawing.Point(219, 250);
+            this.labelAdmCategorias.Location = new System.Drawing.Point(95, 330);
             this.labelAdmCategorias.Name = "labelAdmCategorias";
             this.labelAdmCategorias.Size = new System.Drawing.Size(262, 21);
             this.labelAdmCategorias.TabIndex = 12;
@@ -61,7 +63,7 @@
             this.btnModificarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarCategoria.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCategoria.ForeColor = System.Drawing.Color.White;
-            this.btnModificarCategoria.Location = new System.Drawing.Point(136, 191);
+            this.btnModificarCategoria.Location = new System.Drawing.Point(99, 239);
             this.btnModificarCategoria.Name = "btnModificarCategoria";
             this.btnModificarCategoria.Size = new System.Drawing.Size(81, 23);
             this.btnModificarCategoria.TabIndex = 11;
@@ -76,7 +78,7 @@
             this.btnEliminarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarCategoria.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarCategoria.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarCategoria.Location = new System.Drawing.Point(233, 191);
+            this.btnEliminarCategoria.Location = new System.Drawing.Point(272, 239);
             this.btnEliminarCategoria.Name = "btnEliminarCategoria";
             this.btnEliminarCategoria.Size = new System.Drawing.Size(81, 23);
             this.btnEliminarCategoria.TabIndex = 10;
@@ -91,7 +93,7 @@
             this.btnAgregarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarCategoria.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarCategoria.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarCategoria.Location = new System.Drawing.Point(297, 317);
+            this.btnAgregarCategoria.Location = new System.Drawing.Point(192, 380);
             this.btnAgregarCategoria.Name = "btnAgregarCategoria";
             this.btnAgregarCategoria.Size = new System.Drawing.Size(81, 23);
             this.btnAgregarCategoria.TabIndex = 9;
@@ -101,25 +103,37 @@
             // 
             // dgvCategorias
             // 
+            this.dgvCategorias.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCategorias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCategorias.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCategorias.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvCategorias.Location = new System.Drawing.Point(136, 31);
+            this.dgvCategorias.Location = new System.Drawing.Point(99, 31);
             this.dgvCategorias.Name = "dgvCategorias";
+            this.dgvCategorias.ReadOnly = true;
             this.dgvCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCategorias.Size = new System.Drawing.Size(356, 154);
+            this.dgvCategorias.Size = new System.Drawing.Size(254, 187);
             this.dgvCategorias.TabIndex = 8;
             // 
             // frmAdministrarCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(641, 370);
+            this.ClientSize = new System.Drawing.Size(453, 415);
             this.Controls.Add(this.txtAgregarCategoria);
             this.Controls.Add(this.labelAdmCategorias);
             this.Controls.Add(this.btnModificarCategoria);
             this.Controls.Add(this.btnEliminarCategoria);
             this.Controls.Add(this.btnAgregarCategoria);
             this.Controls.Add(this.dgvCategorias);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAdministrarCategorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrar Categorías";

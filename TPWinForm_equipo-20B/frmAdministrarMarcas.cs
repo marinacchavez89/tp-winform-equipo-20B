@@ -49,7 +49,7 @@ namespace TPWinForm_equipo_20B
                 {
                     negocio.agregar(marca);
 
-                    MessageBox.Show("Marca agregada exitosamente");
+                    MessageBox.Show("Marca agregada exitosamente", "Marcas", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cargar();                 
                 }
             }
@@ -85,7 +85,7 @@ namespace TPWinForm_equipo_20B
             }
             else
             {
-                MessageBox.Show("Seleccione una marca haciendo clic en una fila de la tabla.");
+                MessageBox.Show("Seleccione una marca haciendo clic en una fila de la tabla.", "Marcas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -107,7 +107,7 @@ namespace TPWinForm_equipo_20B
             }
             catch (NullReferenceException ex)
             {
-                MessageBox.Show("Debe seleccionar al menos una marca para eliminar.");
+                MessageBox.Show("Debe seleccionar al menos una marca para eliminar.", "Marcas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cargar();
             }
             catch (Exception ex)

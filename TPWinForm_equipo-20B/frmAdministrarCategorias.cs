@@ -48,7 +48,7 @@ namespace TPWinForm_equipo_20B
                 {
                     negocio.agregar(categoria);
 
-                    MessageBox.Show("Categoría agregada exitosamente");
+                    MessageBox.Show("Categoría agregada exitosamente", "Categoria", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cargar();
                 }
             }
@@ -83,7 +83,7 @@ namespace TPWinForm_equipo_20B
             }
             else
             {
-                MessageBox.Show("Seleccione una categoría haciendo clic en una fila de la tabla.");
+                MessageBox.Show("Seleccione una categoría haciendo clic en una fila de la tabla.", "Categoria", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -104,7 +104,7 @@ namespace TPWinForm_equipo_20B
             }
             catch (NullReferenceException ex)
             {
-                MessageBox.Show("Debe seleccionar al menos una categoría para eliminar.");
+                MessageBox.Show("Debe seleccionar al menos una categoría para eliminar.", "Categoria", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cargar();
             }
             catch (Exception ex)

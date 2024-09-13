@@ -33,7 +33,7 @@ namespace TPWinForm_equipo_20B
 
             negocio.modificar(seleccionado);
 
-            MessageBox.Show("Categoría modificada exitosamente");
+            MessageBox.Show("Categoría modificada exitosamente", "Categoria", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Close();
         }
 

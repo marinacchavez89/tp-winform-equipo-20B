@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdministrarMarcas));
             this.dgvMarcas = new System.Windows.Forms.DataGridView();
             this.btnAgregarMarca = new System.Windows.Forms.Button();
             this.btnEliminarMarca = new System.Windows.Forms.Button();
@@ -39,12 +41,23 @@
             // 
             // dgvMarcas
             // 
+            this.dgvMarcas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMarcas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvMarcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMarcas.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMarcas.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvMarcas.Location = new System.Drawing.Point(81, 63);
+            this.dgvMarcas.Location = new System.Drawing.Point(93, 31);
             this.dgvMarcas.Name = "dgvMarcas";
+            this.dgvMarcas.ReadOnly = true;
             this.dgvMarcas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMarcas.Size = new System.Drawing.Size(356, 154);
+            this.dgvMarcas.Size = new System.Drawing.Size(266, 187);
             this.dgvMarcas.TabIndex = 0;
             // 
             // btnAgregarMarca
@@ -54,7 +67,7 @@
             this.btnAgregarMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarMarca.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarMarca.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarMarca.Location = new System.Drawing.Point(242, 349);
+            this.btnAgregarMarca.Location = new System.Drawing.Point(184, 383);
             this.btnAgregarMarca.Name = "btnAgregarMarca";
             this.btnAgregarMarca.Size = new System.Drawing.Size(81, 23);
             this.btnAgregarMarca.TabIndex = 1;
@@ -69,7 +82,7 @@
             this.btnEliminarMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarMarca.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarMarca.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarMarca.Location = new System.Drawing.Point(178, 223);
+            this.btnEliminarMarca.Location = new System.Drawing.Point(278, 236);
             this.btnEliminarMarca.Name = "btnEliminarMarca";
             this.btnEliminarMarca.Size = new System.Drawing.Size(81, 23);
             this.btnEliminarMarca.TabIndex = 4;
@@ -84,7 +97,7 @@
             this.btnModificarMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarMarca.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarMarca.ForeColor = System.Drawing.Color.White;
-            this.btnModificarMarca.Location = new System.Drawing.Point(81, 223);
+            this.btnModificarMarca.Location = new System.Drawing.Point(93, 236);
             this.btnModificarMarca.Name = "btnModificarMarca";
             this.btnModificarMarca.Size = new System.Drawing.Size(81, 23);
             this.btnModificarMarca.TabIndex = 5;
@@ -96,7 +109,7 @@
             // 
             this.labelAdmMarcas.AutoSize = true;
             this.labelAdmMarcas.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAdmMarcas.Location = new System.Drawing.Point(164, 282);
+            this.labelAdmMarcas.Location = new System.Drawing.Point(106, 333);
             this.labelAdmMarcas.Name = "labelAdmMarcas";
             this.labelAdmMarcas.Size = new System.Drawing.Size(241, 21);
             this.labelAdmMarcas.TabIndex = 6;
@@ -104,22 +117,23 @@
             // 
             // txtAgregarMarca
             // 
-            this.txtAgregarMarca.Location = new System.Drawing.Point(115, 318);
+            this.txtAgregarMarca.Location = new System.Drawing.Point(93, 357);
             this.txtAgregarMarca.Name = "txtAgregarMarca";
-            this.txtAgregarMarca.Size = new System.Drawing.Size(334, 20);
+            this.txtAgregarMarca.Size = new System.Drawing.Size(266, 20);
             this.txtAgregarMarca.TabIndex = 7;
             // 
             // frmAdministrarMarcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 384);
+            this.ClientSize = new System.Drawing.Size(453, 415);
             this.Controls.Add(this.txtAgregarMarca);
             this.Controls.Add(this.labelAdmMarcas);
             this.Controls.Add(this.btnModificarMarca);
             this.Controls.Add(this.btnEliminarMarca);
             this.Controls.Add(this.btnAgregarMarca);
             this.Controls.Add(this.dgvMarcas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAdministrarMarcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrar Marcas";
