@@ -257,7 +257,7 @@
             // lblCampo
             // 
             this.lblCampo.AutoSize = true;
-            this.lblCampo.Location = new System.Drawing.Point(19, 600);
+            this.lblCampo.Location = new System.Drawing.Point(14, 571);
             this.lblCampo.Name = "lblCampo";
             this.lblCampo.Size = new System.Drawing.Size(63, 21);
             this.lblCampo.TabIndex = 10;
@@ -266,7 +266,7 @@
             // lblCriterio
             // 
             this.lblCriterio.AutoSize = true;
-            this.lblCriterio.Location = new System.Drawing.Point(236, 600);
+            this.lblCriterio.Location = new System.Drawing.Point(182, 571);
             this.lblCriterio.Name = "lblCriterio";
             this.lblCriterio.Size = new System.Drawing.Size(65, 21);
             this.lblCriterio.TabIndex = 11;
@@ -275,7 +275,7 @@
             // lblFiltro
             // 
             this.lblFiltro.AutoSize = true;
-            this.lblFiltro.Location = new System.Drawing.Point(455, 600);
+            this.lblFiltro.Location = new System.Drawing.Point(350, 571);
             this.lblFiltro.Name = "lblFiltro";
             this.lblFiltro.Size = new System.Drawing.Size(49, 21);
             this.lblFiltro.TabIndex = 12;
@@ -285,7 +285,7 @@
             // 
             this.cboCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCampo.FormattingEnabled = true;
-            this.cboCampo.Location = new System.Drawing.Point(93, 596);
+            this.cboCampo.Location = new System.Drawing.Point(18, 595);
             this.cboCampo.Name = "cboCampo";
             this.cboCampo.Size = new System.Drawing.Size(132, 29);
             this.cboCampo.TabIndex = 7;
@@ -295,16 +295,16 @@
             // 
             this.cboCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCriterio.FormattingEnabled = true;
-            this.cboCriterio.Location = new System.Drawing.Point(312, 596);
+            this.cboCriterio.Location = new System.Drawing.Point(186, 595);
             this.cboCriterio.Name = "cboCriterio";
             this.cboCriterio.Size = new System.Drawing.Size(132, 29);
             this.cboCriterio.TabIndex = 8;
             // 
             // txtFiltro
             // 
-            this.txtFiltro.Location = new System.Drawing.Point(515, 596);
+            this.txtFiltro.Location = new System.Drawing.Point(354, 595);
             this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Size = new System.Drawing.Size(100, 29);
+            this.txtFiltro.Size = new System.Drawing.Size(175, 29);
             this.txtFiltro.TabIndex = 9;
             // 
             // btnFiltro
@@ -314,9 +314,9 @@
             this.btnFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltro.ForeColor = System.Drawing.Color.White;
-            this.btnFiltro.Location = new System.Drawing.Point(626, 594);
+            this.btnFiltro.Location = new System.Drawing.Point(592, 594);
             this.btnFiltro.Name = "btnFiltro";
-            this.btnFiltro.Size = new System.Drawing.Size(35, 33);
+            this.btnFiltro.Size = new System.Drawing.Size(32, 29);
             this.btnFiltro.TabIndex = 10;
             this.btnFiltro.Text = "🔎";
             this.btnFiltro.UseVisualStyleBackColor = false;
@@ -381,9 +381,9 @@
             this.btnResetFiltro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetFiltro.ForeColor = System.Drawing.Color.White;
             this.btnResetFiltro.Image = ((System.Drawing.Image)(resources.GetObject("btnResetFiltro.Image")));
-            this.btnResetFiltro.Location = new System.Drawing.Point(667, 594);
+            this.btnResetFiltro.Location = new System.Drawing.Point(633, 594);
             this.btnResetFiltro.Name = "btnResetFiltro";
-            this.btnResetFiltro.Size = new System.Drawing.Size(35, 33);
+            this.btnResetFiltro.Size = new System.Drawing.Size(32, 29);
             this.btnResetFiltro.TabIndex = 15;
             this.btnResetFiltro.UseVisualStyleBackColor = false;
             this.btnResetFiltro.Click += new System.EventHandler(this.btnResetFiltro_Click);
