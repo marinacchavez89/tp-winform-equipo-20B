@@ -48,6 +48,10 @@ namespace TPWinForm_equipo_20B
                 {
                     cargarImagen(imagenesActuales[indiceImagenActual]);
                 }
+                else
+                {                
+                    pbxImagenDetalle.Load("https://imgur.com/aSFvF7J.png");
+                }
                 
                 txtCodigo.Text = seleccionado.Codigo;                
                 txtNombreDetalle.Text = seleccionado.Nombre;                

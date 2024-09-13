@@ -44,6 +44,11 @@ namespace TPWinForm_equipo_20B
                 articulo.Nombre = txtNombreDetalle.Text;
                 articulo.Descripcion = txtDescripcionDetalle.Text;
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
+                if (decimal.Parse(txtPrecio.Text) < 0)
+                {
+                    MessageBox.Show("El precio no puede ser un valor negativo.", "Validar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 articulo.TipoMarca = (Marca)cboMarcaDetalle.SelectedItem;
                 articulo.TipoCategoria = (Categoria)cboCategoria.SelectedItem;              
 
