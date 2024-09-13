@@ -54,6 +54,7 @@
             this.administrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnResetFiltro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -372,12 +373,28 @@
             this.categoriasToolStripMenuItem.Text = "&Categorias";
             this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
+            // btnResetFiltro
+            // 
+            this.btnResetFiltro.BackColor = System.Drawing.Color.DarkGray;
+            this.btnResetFiltro.FlatAppearance.BorderSize = 0;
+            this.btnResetFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetFiltro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetFiltro.ForeColor = System.Drawing.Color.White;
+            this.btnResetFiltro.Image = ((System.Drawing.Image)(resources.GetObject("btnResetFiltro.Image")));
+            this.btnResetFiltro.Location = new System.Drawing.Point(667, 594);
+            this.btnResetFiltro.Name = "btnResetFiltro";
+            this.btnResetFiltro.Size = new System.Drawing.Size(35, 33);
+            this.btnResetFiltro.TabIndex = 15;
+            this.btnResetFiltro.UseVisualStyleBackColor = false;
+            this.btnResetFiltro.Click += new System.EventHandler(this.btnResetFiltro_Click);
+            // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1370, 727);
+            this.Controls.Add(this.btnResetFiltro);
             this.Controls.Add(this.btnFiltro);
             this.Controls.Add(this.txtFiltro);
             this.Controls.Add(this.cboCriterio);
@@ -441,6 +458,7 @@
         private System.Windows.Forms.ToolStripMenuItem administrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem categoriasToolStripMenuItem;
+        private System.Windows.Forms.Button btnResetFiltro;
     }
 }
 

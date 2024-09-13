@@ -109,3 +109,7 @@ C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinFo
 C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmAdministrarMarcas.resources
 C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmModificarCategoria.resources
 C:\Users\Marina_Chavez\Desktop\TPWinForm_equipo-20B\TPWinForm_equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmModificarMarca.resources
+C:\Users\Lazaro\Desktop\tpProgra3\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmAdministrarCategorias.resources
+C:\Users\Lazaro\Desktop\tpProgra3\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmAdministrarMarcas.resources
+C:\Users\Lazaro\Desktop\tpProgra3\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmModificarCategoria.resources
+C:\Users\Lazaro\Desktop\tpProgra3\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmModificarMarca.resources

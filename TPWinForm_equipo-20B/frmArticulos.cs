@@ -316,6 +316,7 @@ namespace TPWinForm_equipo_20B
 
         private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cboCampo.SelectedItem == null) return;
             string opcion = cboCampo.SelectedItem.ToString();
             if (opcion == "Precio")
             {
@@ -383,6 +384,26 @@ namespace TPWinForm_equipo_20B
         {
             frmAdministrarCategorias categoria = new frmAdministrarCategorias();
             categoria.ShowDialog();
+        }
+
+        private void btnResetFiltro_Click(object sender, EventArgs e)
+        {
+            try
+            {
+            txtFiltro.Clear();
+                cboCampo.SelectedIndex = -1;
+                cboCriterio.SelectedIndex = -1;
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                listaArticulo = negocio.listar();
+                dgvArticulos.DataSource = listaArticulo;
+                cargar(listaArticulo);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+            
         }
     }
 }
