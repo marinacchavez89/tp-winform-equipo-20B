@@ -85,7 +85,7 @@
             // 
             // pbxImagen
             // 
-            this.pbxImagen.Location = new System.Drawing.Point(852, 139);
+            this.pbxImagen.Location = new System.Drawing.Point(847, 139);
             this.pbxImagen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbxImagen.Name = "pbxImagen";
             this.pbxImagen.Size = new System.Drawing.Size(344, 334);
@@ -190,7 +190,7 @@
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnSiguiente.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnSiguiente.Location = new System.Drawing.Point(1204, 290);
+            this.btnSiguiente.Location = new System.Drawing.Point(1199, 290);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(39, 37);
@@ -208,7 +208,7 @@
             this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnterior.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnAnterior.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnAnterior.Location = new System.Drawing.Point(805, 290);
+            this.btnAnterior.Location = new System.Drawing.Point(800, 290);
             this.btnAnterior.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(39, 37);
@@ -243,7 +243,7 @@
             this.btnAdministrarImagenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdministrarImagenes.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrarImagenes.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnAdministrarImagenes.Location = new System.Drawing.Point(1019, 499);
+            this.btnAdministrarImagenes.Location = new System.Drawing.Point(1014, 499);
             this.btnAdministrarImagenes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdministrarImagenes.Name = "btnAdministrarImagenes";
             this.btnAdministrarImagenes.Size = new System.Drawing.Size(29, 30);
@@ -256,7 +256,7 @@
             // lblCampo
             // 
             this.lblCampo.AutoSize = true;
-            this.lblCampo.Location = new System.Drawing.Point(20, 606);
+            this.lblCampo.Location = new System.Drawing.Point(19, 600);
             this.lblCampo.Name = "lblCampo";
             this.lblCampo.Size = new System.Drawing.Size(63, 21);
             this.lblCampo.TabIndex = 10;
@@ -265,7 +265,7 @@
             // lblCriterio
             // 
             this.lblCriterio.AutoSize = true;
-            this.lblCriterio.Location = new System.Drawing.Point(207, 606);
+            this.lblCriterio.Location = new System.Drawing.Point(236, 600);
             this.lblCriterio.Name = "lblCriterio";
             this.lblCriterio.Size = new System.Drawing.Size(65, 21);
             this.lblCriterio.TabIndex = 11;
@@ -274,7 +274,7 @@
             // lblFiltro
             // 
             this.lblFiltro.AutoSize = true;
-            this.lblFiltro.Location = new System.Drawing.Point(396, 606);
+            this.lblFiltro.Location = new System.Drawing.Point(455, 600);
             this.lblFiltro.Name = "lblFiltro";
             this.lblFiltro.Size = new System.Drawing.Size(49, 21);
             this.lblFiltro.TabIndex = 12;
@@ -284,9 +284,9 @@
             // 
             this.cboCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCampo.FormattingEnabled = true;
-            this.cboCampo.Location = new System.Drawing.Point(95, 602);
+            this.cboCampo.Location = new System.Drawing.Point(93, 596);
             this.cboCampo.Name = "cboCampo";
-            this.cboCampo.Size = new System.Drawing.Size(100, 29);
+            this.cboCampo.Size = new System.Drawing.Size(132, 29);
             this.cboCampo.TabIndex = 7;
             this.cboCampo.SelectedIndexChanged += new System.EventHandler(this.cboCampo_SelectedIndexChanged);
             // 
@@ -294,14 +294,14 @@
             // 
             this.cboCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCriterio.FormattingEnabled = true;
-            this.cboCriterio.Location = new System.Drawing.Point(284, 602);
+            this.cboCriterio.Location = new System.Drawing.Point(312, 596);
             this.cboCriterio.Name = "cboCriterio";
-            this.cboCriterio.Size = new System.Drawing.Size(100, 29);
+            this.cboCriterio.Size = new System.Drawing.Size(132, 29);
             this.cboCriterio.TabIndex = 8;
             // 
             // txtFiltro
             // 
-            this.txtFiltro.Location = new System.Drawing.Point(457, 602);
+            this.txtFiltro.Location = new System.Drawing.Point(515, 596);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(100, 29);
             this.txtFiltro.TabIndex = 9;
@@ -313,7 +313,7 @@
             this.btnFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltro.ForeColor = System.Drawing.Color.White;
-            this.btnFiltro.Location = new System.Drawing.Point(599, 599);
+            this.btnFiltro.Location = new System.Drawing.Point(626, 594);
             this.btnFiltro.Name = "btnFiltro";
             this.btnFiltro.Size = new System.Drawing.Size(35, 33);
             this.btnFiltro.TabIndex = 10;
@@ -329,7 +329,7 @@
             this.btnEliminarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarImagen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarImagen.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnEliminarImagen.Location = new System.Drawing.Point(982, 499);
+            this.btnEliminarImagen.Location = new System.Drawing.Point(977, 499);
             this.btnEliminarImagen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminarImagen.Name = "btnEliminarImagen";
             this.btnEliminarImagen.Size = new System.Drawing.Size(29, 30);
@@ -361,14 +361,14 @@
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
-            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.marcasToolStripMenuItem.Text = "&Marcas";
             this.marcasToolStripMenuItem.Click += new System.EventHandler(this.marcasToolStripMenuItem_Click);
             // 
             // categoriasToolStripMenuItem
             // 
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.categoriasToolStripMenuItem.Text = "&Categorias";
             this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 

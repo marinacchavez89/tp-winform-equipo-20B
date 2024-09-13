@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModificarMarca));
             this.lblDescripcionMarca = new System.Windows.Forms.Label();
             this.txtDescripcionMarca = new System.Windows.Forms.TextBox();
             this.btnModificarMarcaAceptar = new System.Windows.Forms.Button();
@@ -37,17 +38,18 @@
             // lblDescripcionMarca
             // 
             this.lblDescripcionMarca.AutoSize = true;
-            this.lblDescripcionMarca.Location = new System.Drawing.Point(84, 76);
+            this.lblDescripcionMarca.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionMarca.Location = new System.Drawing.Point(38, 88);
             this.lblDescripcionMarca.Name = "lblDescripcionMarca";
-            this.lblDescripcionMarca.Size = new System.Drawing.Size(66, 13);
+            this.lblDescripcionMarca.Size = new System.Drawing.Size(70, 13);
             this.lblDescripcionMarca.TabIndex = 0;
             this.lblDescripcionMarca.Text = "Descripción:";
             // 
             // txtDescripcionMarca
             // 
-            this.txtDescripcionMarca.Location = new System.Drawing.Point(156, 73);
+            this.txtDescripcionMarca.Location = new System.Drawing.Point(110, 85);
             this.txtDescripcionMarca.Name = "txtDescripcionMarca";
-            this.txtDescripcionMarca.Size = new System.Drawing.Size(100, 20);
+            this.txtDescripcionMarca.Size = new System.Drawing.Size(187, 20);
             this.txtDescripcionMarca.TabIndex = 0;
             // 
             // btnModificarMarcaAceptar
@@ -57,7 +59,7 @@
             this.btnModificarMarcaAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarMarcaAceptar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarMarcaAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnModificarMarcaAceptar.Location = new System.Drawing.Point(175, 191);
+            this.btnModificarMarcaAceptar.Location = new System.Drawing.Point(211, 124);
             this.btnModificarMarcaAceptar.Name = "btnModificarMarcaAceptar";
             this.btnModificarMarcaAceptar.Size = new System.Drawing.Size(81, 23);
             this.btnModificarMarcaAceptar.TabIndex = 2;
@@ -72,7 +74,7 @@
             this.btnModificarMarcaCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarMarcaCancelar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarMarcaCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnModificarMarcaCancelar.Location = new System.Drawing.Point(69, 191);
+            this.btnModificarMarcaCancelar.Location = new System.Drawing.Point(110, 124);
             this.btnModificarMarcaCancelar.Name = "btnModificarMarcaCancelar";
             this.btnModificarMarcaCancelar.Size = new System.Drawing.Size(81, 23);
             this.btnModificarMarcaCancelar.TabIndex = 1;
@@ -89,6 +91,9 @@
             this.Controls.Add(this.btnModificarMarcaAceptar);
             this.Controls.Add(this.txtDescripcionMarca);
             this.Controls.Add(this.lblDescripcionMarca);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(386, 276);
+            this.MinimumSize = new System.Drawing.Size(386, 276);
             this.Name = "frmModificarMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Marca";

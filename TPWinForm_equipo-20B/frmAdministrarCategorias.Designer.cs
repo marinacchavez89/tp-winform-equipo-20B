@@ -41,7 +41,7 @@
             // 
             // txtAgregarCategoria
             // 
-            this.txtAgregarCategoria.Location = new System.Drawing.Point(99, 354);
+            this.txtAgregarCategoria.Location = new System.Drawing.Point(99, 332);
             this.txtAgregarCategoria.Name = "txtAgregarCategoria";
             this.txtAgregarCategoria.Size = new System.Drawing.Size(254, 20);
             this.txtAgregarCategoria.TabIndex = 3;
@@ -50,7 +50,7 @@
             // 
             this.labelAdmCategorias.AutoSize = true;
             this.labelAdmCategorias.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAdmCategorias.Location = new System.Drawing.Point(95, 330);
+            this.labelAdmCategorias.Location = new System.Drawing.Point(95, 308);
             this.labelAdmCategorias.Name = "labelAdmCategorias";
             this.labelAdmCategorias.Size = new System.Drawing.Size(262, 21);
             this.labelAdmCategorias.TabIndex = 12;
@@ -63,7 +63,7 @@
             this.btnModificarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarCategoria.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCategoria.ForeColor = System.Drawing.Color.White;
-            this.btnModificarCategoria.Location = new System.Drawing.Point(99, 239);
+            this.btnModificarCategoria.Location = new System.Drawing.Point(129, 242);
             this.btnModificarCategoria.Name = "btnModificarCategoria";
             this.btnModificarCategoria.Size = new System.Drawing.Size(81, 23);
             this.btnModificarCategoria.TabIndex = 2;
@@ -78,7 +78,7 @@
             this.btnEliminarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarCategoria.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarCategoria.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarCategoria.Location = new System.Drawing.Point(272, 239);
+            this.btnEliminarCategoria.Location = new System.Drawing.Point(236, 242);
             this.btnEliminarCategoria.Name = "btnEliminarCategoria";
             this.btnEliminarCategoria.Size = new System.Drawing.Size(81, 23);
             this.btnEliminarCategoria.TabIndex = 1;
@@ -93,7 +93,7 @@
             this.btnAgregarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarCategoria.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarCategoria.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarCategoria.Location = new System.Drawing.Point(192, 380);
+            this.btnAgregarCategoria.Location = new System.Drawing.Point(192, 358);
             this.btnAgregarCategoria.Name = "btnAgregarCategoria";
             this.btnAgregarCategoria.Size = new System.Drawing.Size(81, 23);
             this.btnAgregarCategoria.TabIndex = 4;
@@ -115,11 +115,11 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCategorias.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCategorias.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvCategorias.Location = new System.Drawing.Point(99, 31);
+            this.dgvCategorias.Location = new System.Drawing.Point(155, 34);
             this.dgvCategorias.Name = "dgvCategorias";
             this.dgvCategorias.ReadOnly = true;
             this.dgvCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCategorias.Size = new System.Drawing.Size(254, 187);
+            this.dgvCategorias.Size = new System.Drawing.Size(144, 187);
             this.dgvCategorias.TabIndex = 0;
             // 
             // frmAdministrarCategorias
@@ -134,6 +134,8 @@
             this.Controls.Add(this.btnAgregarCategoria);
             this.Controls.Add(this.dgvCategorias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(469, 454);
+            this.MinimumSize = new System.Drawing.Size(469, 454);
             this.Name = "frmAdministrarCategorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrar Categorías";

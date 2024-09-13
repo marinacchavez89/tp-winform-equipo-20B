@@ -28,6 +28,7 @@ namespace TPWinForm_equipo_20B
                 MarcaNegocio negocio = new MarcaNegocio();
                 listaMarca = negocio.listar();
                 dgvMarcas.DataSource = listaMarca;
+                ocultarColumnas();
             }
             catch (Exception ex)
             {
@@ -115,6 +116,11 @@ namespace TPWinForm_equipo_20B
 
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void ocultarColumnas()
+        {
+            dgvMarcas.Columns["Id"].Visible = false;
         }
     }
 }

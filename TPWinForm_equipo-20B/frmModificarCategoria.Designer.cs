@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModificarCategoria));
             this.btnModificarCategoriaCancelar = new System.Windows.Forms.Button();
             this.btnModificarCategoriaAceptar = new System.Windows.Forms.Button();
             this.txtDescripcionCategoria = new System.Windows.Forms.TextBox();
@@ -41,7 +42,7 @@
             this.btnModificarCategoriaCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarCategoriaCancelar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCategoriaCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnModificarCategoriaCancelar.Location = new System.Drawing.Point(72, 191);
+            this.btnModificarCategoriaCancelar.Location = new System.Drawing.Point(108, 127);
             this.btnModificarCategoriaCancelar.Name = "btnModificarCategoriaCancelar";
             this.btnModificarCategoriaCancelar.Size = new System.Drawing.Size(81, 23);
             this.btnModificarCategoriaCancelar.TabIndex = 1;
@@ -56,7 +57,7 @@
             this.btnModificarCategoriaAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarCategoriaAceptar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCategoriaAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnModificarCategoriaAceptar.Location = new System.Drawing.Point(178, 191);
+            this.btnModificarCategoriaAceptar.Location = new System.Drawing.Point(214, 127);
             this.btnModificarCategoriaAceptar.Name = "btnModificarCategoriaAceptar";
             this.btnModificarCategoriaAceptar.Size = new System.Drawing.Size(81, 23);
             this.btnModificarCategoriaAceptar.TabIndex = 2;
@@ -66,18 +67,19 @@
             // 
             // txtDescripcionCategoria
             // 
-            this.txtDescripcionCategoria.Location = new System.Drawing.Point(159, 65);
+            this.txtDescripcionCategoria.Location = new System.Drawing.Point(108, 84);
             this.txtDescripcionCategoria.Name = "txtDescripcionCategoria";
-            this.txtDescripcionCategoria.Size = new System.Drawing.Size(100, 20);
+            this.txtDescripcionCategoria.Size = new System.Drawing.Size(187, 20);
             this.txtDescripcionCategoria.TabIndex = 0;
             // 
             // lblDescripcionCategoria
             // 
             this.lblDescripcionCategoria.AutoSize = true;
-            this.lblDescripcionCategoria.Location = new System.Drawing.Point(87, 68);
+            this.lblDescripcionCategoria.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionCategoria.Location = new System.Drawing.Point(36, 87);
             this.lblDescripcionCategoria.Name = "lblDescripcionCategoria";
-            this.lblDescripcionCategoria.Size = new System.Drawing.Size(66, 13);
-            this.lblDescripcionCategoria.TabIndex = 8;
+            this.lblDescripcionCategoria.Size = new System.Drawing.Size(70, 13);
+            this.lblDescripcionCategoria.TabIndex = 3;
             this.lblDescripcionCategoria.Text = "Descripción:";
             // 
             // frmModificarCategoria
@@ -89,6 +91,9 @@
             this.Controls.Add(this.btnModificarCategoriaAceptar);
             this.Controls.Add(this.txtDescripcionCategoria);
             this.Controls.Add(this.lblDescripcionCategoria);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(386, 276);
+            this.MinimumSize = new System.Drawing.Size(386, 276);
             this.Name = "frmModificarCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Categoría";

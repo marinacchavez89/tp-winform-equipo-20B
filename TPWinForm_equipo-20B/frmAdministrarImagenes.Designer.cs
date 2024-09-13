@@ -139,6 +139,8 @@
             this.Controls.Add(this.txtUrlImagen);
             this.Controls.Add(this.btnAgregarImagen);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(707, 372);
+            this.MinimumSize = new System.Drawing.Size(707, 372);
             this.Name = "frmAdministrarImagenes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrar Imagenes";

@@ -28,6 +28,7 @@ namespace TPWinForm_equipo_20B
                 CategoriaNegocio negocio = new CategoriaNegocio();
                 listaCategoria = negocio.listar();
                 dgvCategorias.DataSource = listaCategoria;
+                ocultarColumnas();
             }
             catch (Exception ex)
             {
@@ -112,6 +113,11 @@ namespace TPWinForm_equipo_20B
 
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void ocultarColumnas()
+        {
+            dgvCategorias.Columns["Id"].Visible = false;
         }
     }
 }
