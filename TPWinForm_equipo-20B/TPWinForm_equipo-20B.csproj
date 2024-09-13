@@ -52,6 +52,12 @@
     <Compile Include="frmAdministrarImagenes.Designer.cs">
       <DependentUpon>frmAdministrarImagenes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdministrarMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdministrarMarcas.Designer.cs">
+      <DependentUpon>frmAdministrarMarcas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAltaArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,10 +76,19 @@
     <Compile Include="frmDetalle.Designer.cs">
       <DependentUpon>frmDetalle.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModificarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarMarca.Designer.cs">
+      <DependentUpon>frmModificarMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAdministrarImagenes.resx">
       <DependentUpon>frmAdministrarImagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdministrarMarcas.resx">
+      <DependentUpon>frmAdministrarMarcas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAltaArticulo.resx">
       <DependentUpon>frmAltaArticulo.cs</DependentUpon>
@@ -83,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDetalle.resx">
       <DependentUpon>frmDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarMarca.resx">
+      <DependentUpon>frmModificarMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

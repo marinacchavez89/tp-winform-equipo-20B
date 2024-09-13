@@ -364,6 +364,12 @@ namespace TPWinForm_equipo_20B
             }
 
             return false;
-        }        
+        }
+
+        private void marcasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAdministrarMarcas marca = new frmAdministrarMarcas();
+            marca.ShowDialog();
+        }
     }
 }

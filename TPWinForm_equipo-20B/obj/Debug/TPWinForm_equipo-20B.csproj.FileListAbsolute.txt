@@ -83,3 +83,23 @@ C:\Users\juanc\OneDrive\Escritorio\Materias\Programacion III\tp-winform-equipo-2
 C:\Users\juanc\OneDrive\Escritorio\Materias\Programacion III\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinFor.DB39B78B.Up2Date
 C:\Users\juanc\OneDrive\Escritorio\Materias\Programacion III\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.exe
 C:\Users\juanc\OneDrive\Escritorio\Materias\Programacion III\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.pdb
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\bin\Debug\TPWinForm_equipo-20B.exe.config
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\bin\Debug\TPWinForm_equipo-20B.exe
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\bin\Debug\TPWinForm_equipo-20B.pdb
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\bin\Debug\dominio.dll
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\bin\Debug\negocio.dll
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\bin\Debug\dominio.pdb
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\bin\Debug\negocio.pdb
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmAdministrarImagenes.resources
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmAltaArticulo.resources
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmArticulos.resources
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmDetalle.resources
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.Properties.Resources.resources
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.csproj.GenerateResource.cache
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.csproj.CopyComplete
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.exe
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo-20B.pdb
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmAdministrarMarcas.resources
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\TPWinForm_equipo-20B\obj\Debug\TPWinForm_equipo_20B.frmModificarMarca.resources
