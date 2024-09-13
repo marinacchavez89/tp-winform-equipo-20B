@@ -45,7 +45,7 @@ namespace TPWinForm_equipo_20B
                 articulo.Descripcion = txtDescripcionDetalle.Text;
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
                 articulo.TipoMarca = (Marca)cboMarcaDetalle.SelectedItem;
-                articulo.TipoCategoria = (Categoria)cboCategoria.SelectedItem;
+                articulo.TipoCategoria = (Categoria)cboCategoria.SelectedItem;              
 
                 DialogResult respuesta;
                 DialogResult confirmarModificar;
@@ -84,7 +84,7 @@ namespace TPWinForm_equipo_20B
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.Message, "Error al agregar Artículo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

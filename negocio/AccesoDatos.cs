@@ -72,5 +72,30 @@ namespace negocio
             conexion.Close();
         }
 
+        public object ejecutarScalar()
+        {
+            try
+            {
+                if (conexion.State != System.Data.ConnectionState.Open)
+                {
+                    conexion.Open();
+                }
+                comando.Connection = conexion;
+                return comando.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (conexion.State == System.Data.ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+                comando.Parameters.Clear();
+            }
+        }
+
     }
 }

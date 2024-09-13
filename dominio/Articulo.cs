@@ -28,5 +28,6 @@ namespace dominio
         public Categoria TipoCategoria { get; set; }
         public List<Imagen> ImagenArticulo { get; set; }
         public decimal Precio { get; set; }
+        
     }
 }

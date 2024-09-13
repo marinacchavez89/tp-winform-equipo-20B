@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,10 +51,14 @@ namespace TPWinForm_equipo_20B
                         imagenesActuales.Add(img.ImagenUrl);
                     }
 
+
                     if (imagenesActuales.Count > 0)
                     {
                         cargarImagen(imagenesActuales[indiceImagenActual]);
-                    }
+                    }else
+                    {                    
+                        pbxImagen.Load("https://imgur.com/vVOhnuA.png");
+                    }                  
 
                     indiceImagenActual = 0;
                     if (imagenesActuales.Count > 0)
@@ -106,14 +111,16 @@ namespace TPWinForm_equipo_20B
 
         private void ocultarColumnas()
         {
-            dgvArticulos.Columns["Id"].Visible = false;
+            dgvArticulos.Columns["Id"].Visible = false;            
         }
 
         private void cargarImagen(string imagen)
         {
             try
-            {
+            {   
+                
                 pbxImagen.Load(imagen);
+                
             }
             catch (Exception ex)
             {
@@ -197,7 +204,7 @@ namespace TPWinForm_equipo_20B
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            if (imagenesActuales.Count >= 0)
+            if (imagenesActuales.Count > 0 && imagenesActuales!=null)
             {
                 indiceImagenActual = (indiceImagenActual + 1) % imagenesActuales.Count;
                 cargarImagen(imagenesActuales[indiceImagenActual]);
@@ -206,7 +213,7 @@ namespace TPWinForm_equipo_20B
 
         private void btnAnterior_Click(object sender, EventArgs e)
         {
-            if (imagenesActuales.Count >= 0)
+            if (imagenesActuales.Count > 0 && imagenesActuales != null)
             { 
                 indiceImagenActual = (indiceImagenActual - 1 + imagenesActuales.Count) % imagenesActuales.Count;
                 cargarImagen(imagenesActuales[indiceImagenActual]);

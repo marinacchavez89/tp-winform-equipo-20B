@@ -49,7 +49,7 @@
             // 
             this.lblCodigoDetalle.AutoSize = true;
             this.lblCodigoDetalle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblCodigoDetalle.Location = new System.Drawing.Point(59, 64);
+            this.lblCodigoDetalle.Location = new System.Drawing.Point(64, 60);
             this.lblCodigoDetalle.Name = "lblCodigoDetalle";
             this.lblCodigoDetalle.Size = new System.Drawing.Size(60, 21);
             this.lblCodigoDetalle.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             this.lblNombreDetalle.AutoSize = true;
             this.lblNombreDetalle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblNombreDetalle.Location = new System.Drawing.Point(59, 100);
+            this.lblNombreDetalle.Location = new System.Drawing.Point(64, 96);
             this.lblNombreDetalle.Name = "lblNombreDetalle";
             this.lblNombreDetalle.Size = new System.Drawing.Size(68, 21);
             this.lblNombreDetalle.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             this.lblDescripcionDetalle.AutoSize = true;
             this.lblDescripcionDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblDescripcionDetalle.Location = new System.Drawing.Point(59, 136);
+            this.lblDescripcionDetalle.Location = new System.Drawing.Point(64, 132);
             this.lblDescripcionDetalle.Name = "lblDescripcionDetalle";
             this.lblDescripcionDetalle.Size = new System.Drawing.Size(92, 20);
             this.lblDescripcionDetalle.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.txtCodigoDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCodigoDetalle.Location = new System.Drawing.Point(157, 65);
+            this.txtCodigoDetalle.Location = new System.Drawing.Point(162, 61);
             this.txtCodigoDetalle.Name = "txtCodigoDetalle";
             this.txtCodigoDetalle.Size = new System.Drawing.Size(121, 20);
             this.txtCodigoDetalle.TabIndex = 0;
@@ -90,7 +90,7 @@
             this.txtDescripcionDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescripcionDetalle.Location = new System.Drawing.Point(157, 135);
+            this.txtDescripcionDetalle.Location = new System.Drawing.Point(162, 131);
             this.txtDescripcionDetalle.Name = "txtDescripcionDetalle";
             this.txtDescripcionDetalle.Size = new System.Drawing.Size(121, 20);
             this.txtDescripcionDetalle.TabIndex = 2;
@@ -100,7 +100,7 @@
             this.txtNombreDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombreDetalle.Location = new System.Drawing.Point(156, 100);
+            this.txtNombreDetalle.Location = new System.Drawing.Point(161, 96);
             this.txtNombreDetalle.Name = "txtNombreDetalle";
             this.txtNombreDetalle.Size = new System.Drawing.Size(121, 20);
             this.txtNombreDetalle.TabIndex = 1;
@@ -109,7 +109,7 @@
             // 
             this.lblMarcaDetalle.AutoSize = true;
             this.lblMarcaDetalle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblMarcaDetalle.Location = new System.Drawing.Point(59, 171);
+            this.lblMarcaDetalle.Location = new System.Drawing.Point(64, 167);
             this.lblMarcaDetalle.Name = "lblMarcaDetalle";
             this.lblMarcaDetalle.Size = new System.Drawing.Size(53, 21);
             this.lblMarcaDetalle.TabIndex = 6;
@@ -119,7 +119,7 @@
             // 
             this.lblCategoriaDetalle.AutoSize = true;
             this.lblCategoriaDetalle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblCategoriaDetalle.Location = new System.Drawing.Point(59, 207);
+            this.lblCategoriaDetalle.Location = new System.Drawing.Point(64, 203);
             this.lblCategoriaDetalle.Name = "lblCategoriaDetalle";
             this.lblCategoriaDetalle.Size = new System.Drawing.Size(77, 21);
             this.lblCategoriaDetalle.TabIndex = 7;
@@ -129,7 +129,7 @@
             // 
             this.lblPrecioDetalle.AutoSize = true;
             this.lblPrecioDetalle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblPrecioDetalle.Location = new System.Drawing.Point(59, 243);
+            this.lblPrecioDetalle.Location = new System.Drawing.Point(64, 239);
             this.lblPrecioDetalle.Name = "lblPrecioDetalle";
             this.lblPrecioDetalle.Size = new System.Drawing.Size(53, 21);
             this.lblPrecioDetalle.TabIndex = 8;
@@ -140,7 +140,7 @@
             this.txtPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPrecio.Location = new System.Drawing.Point(156, 242);
+            this.txtPrecio.Location = new System.Drawing.Point(161, 238);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(121, 20);
             this.txtPrecio.TabIndex = 5;
@@ -154,7 +154,7 @@
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Location = new System.Drawing.Point(188, 334);
+            this.btnAceptar.Location = new System.Drawing.Point(193, 330);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(89, 34);
             this.btnAceptar.TabIndex = 7;
@@ -169,7 +169,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(63, 334);
+            this.btnCancelar.Location = new System.Drawing.Point(68, 330);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(89, 34);
             this.btnCancelar.TabIndex = 6;
@@ -184,7 +184,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboMarcaDetalle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMarcaDetalle.FormattingEnabled = true;
-            this.cboMarcaDetalle.Location = new System.Drawing.Point(156, 170);
+            this.cboMarcaDetalle.Location = new System.Drawing.Point(161, 166);
             this.cboMarcaDetalle.Name = "cboMarcaDetalle";
             this.cboMarcaDetalle.Size = new System.Drawing.Size(121, 21);
             this.cboMarcaDetalle.TabIndex = 3;
@@ -196,7 +196,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cboCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCategoria.FormattingEnabled = true;
-            this.cboCategoria.Location = new System.Drawing.Point(156, 206);
+            this.cboCategoria.Location = new System.Drawing.Point(161, 202);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(121, 21);
             this.cboCategoria.TabIndex = 4;

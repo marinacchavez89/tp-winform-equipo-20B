@@ -101,18 +101,34 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)values(@Codigo, @Nombre, @Descripcion, @idMarca, @idCategoria, @Precio)");
+
+                // Verificar si ya existe un artículo con el mismo código y marca.
+                datos.setearConsulta("SELECT COUNT(*) FROM ARTICULOS WHERE Codigo = @Codigo AND IdMarca = @idMarca AND IdCategoria = @idCategoria");
                 datos.setearParametro("@Codigo", articulo.Codigo);
-                datos.setearParametro("@Nombre", articulo.Nombre);
-                datos.setearParametro("@Descripcion", articulo.Descripcion);
                 datos.setearParametro("@idMarca", articulo.TipoMarca.Id);
                 datos.setearParametro("@idCategoria", articulo.TipoCategoria.Id);
-                datos.setearParametro("@Precio", articulo.Precio);
-                datos.ejecutarAccion();
+
+                int cantidad = (int)datos.ejecutarScalar();
+
+                if (cantidad > 0)
+                {
+                    throw new Exception($"El artículo con Código '{articulo.Codigo}', Marca '{articulo.TipoMarca}', Categoria '{articulo.TipoCategoria}' ya existe en la base de datos.");
+                }
+                else
+                {
+                    datos.setearConsulta("INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio)values(@Codigo, @Nombre, @Descripcion, @idMarca, @idCategoria, @Precio)");
+                    datos.setearParametro("@Codigo", articulo.Codigo);
+                    datos.setearParametro("@Nombre", articulo.Nombre);
+                    datos.setearParametro("@Descripcion", articulo.Descripcion);
+                    datos.setearParametro("@idMarca", articulo.TipoMarca.Id);
+                    datos.setearParametro("@idCategoria", articulo.TipoCategoria.Id);
+                    datos.setearParametro("@Precio", articulo.Precio);
+                    datos.ejecutarAccion();
+                }
+                
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
             finally

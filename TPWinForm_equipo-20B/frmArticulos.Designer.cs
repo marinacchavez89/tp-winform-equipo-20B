@@ -243,7 +243,7 @@
             this.btnAdministrarImagenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdministrarImagenes.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrarImagenes.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnAdministrarImagenes.Location = new System.Drawing.Point(1014, 499);
+            this.btnAdministrarImagenes.Location = new System.Drawing.Point(1023, 499);
             this.btnAdministrarImagenes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdministrarImagenes.Name = "btnAdministrarImagenes";
             this.btnAdministrarImagenes.Size = new System.Drawing.Size(29, 30);
@@ -329,7 +329,7 @@
             this.btnEliminarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarImagen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarImagen.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnEliminarImagen.Location = new System.Drawing.Point(977, 499);
+            this.btnEliminarImagen.Location = new System.Drawing.Point(986, 499);
             this.btnEliminarImagen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminarImagen.Name = "btnEliminarImagen";
             this.btnEliminarImagen.Size = new System.Drawing.Size(29, 30);

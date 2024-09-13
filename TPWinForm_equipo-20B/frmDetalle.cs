@@ -48,6 +48,7 @@ namespace TPWinForm_equipo_20B
                 {
                     cargarImagen(imagenesActuales[indiceImagenActual]);
                 }
+                
                 txtCodigo.Text = seleccionado.Codigo;                
                 txtNombreDetalle.Text = seleccionado.Nombre;                
                 txtMarcaDetalle.Text = seleccionado.TipoMarca.ToString();
@@ -82,7 +83,7 @@ namespace TPWinForm_equipo_20B
 
         private void btnAnteriorDetalle_Click(object sender, EventArgs e)
         {
-            if (imagenesActuales.Count >= 0)
+            if (imagenesActuales.Count > 0 && imagenesActuales != null)
             {
                 indiceImagenActual = (indiceImagenActual + 1) % imagenesActuales.Count;
                 cargarImagen(imagenesActuales[indiceImagenActual]);
@@ -91,7 +92,7 @@ namespace TPWinForm_equipo_20B
 
         private void btnSiguienteDetalle_Click(object sender, EventArgs e)
         {
-            if (imagenesActuales.Count >= 0)
+            if (imagenesActuales.Count > 0 && imagenesActuales != null)
             {
                 indiceImagenActual = (indiceImagenActual - 1 + imagenesActuales.Count) % imagenesActuales.Count;
                 cargarImagen(imagenesActuales[indiceImagenActual]);
