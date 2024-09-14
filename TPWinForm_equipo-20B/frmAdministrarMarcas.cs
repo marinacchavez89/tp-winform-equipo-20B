@@ -45,7 +45,7 @@ namespace TPWinForm_equipo_20B
             {
                 if (string.IsNullOrWhiteSpace(txtAgregarMarca.Text))
                 {
-                    MessageBox.Show("Por favor ingrese una Marca valida");
+                    MessageBox.Show("El campo 'Categoria' no puede estar vacio", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 marca = new Marca();
