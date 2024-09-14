@@ -39,9 +39,14 @@ namespace TPWinForm_equipo_20B
         private void btnAgregarCategoria_Click_1(object sender, EventArgs e)
         {
             CategoriaNegocio negocio = new CategoriaNegocio();
-
+          
             try
             {
+                if(string.IsNullOrWhiteSpace(txtAgregarCategoria.Text))
+                {
+                    MessageBox.Show("Por favor ingrese una categoria valida");
+                    return;
+                }
                 categoria = new Categoria();
                 categoria.Descripcion = txtAgregarCategoria.Text;
                 DialogResult respuesta = MessageBox.Show("¿Esta seguro que desea agregar la categoría?", "Agregar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);

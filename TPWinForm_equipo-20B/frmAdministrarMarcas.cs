@@ -43,6 +43,11 @@ namespace TPWinForm_equipo_20B
 
             try
             {
+                if (string.IsNullOrWhiteSpace(txtAgregarMarca.Text))
+                {
+                    MessageBox.Show("Por favor ingrese una Marca valida");
+                    return;
+                }
                 marca = new Marca();
                 marca.Descripcion = txtAgregarMarca.Text;
                 DialogResult respuesta = MessageBox.Show("¿Esta seguro que desea agregar la marca?", "Agregar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
