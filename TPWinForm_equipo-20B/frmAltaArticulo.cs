@@ -57,17 +57,24 @@ namespace TPWinForm_equipo_20B
 
                 if (articulo.Id != 0)
                 {
-                    confirmarModificar = MessageBox.Show("¿Esta seguro de modificar el articulo?", "Modificar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                    if(confirmarModificar == DialogResult.Yes)
+                    if(string.IsNullOrEmpty(txtCodigoDetalle.Text) || string.IsNullOrEmpty(txtNombreDetalle.Text))
                     {
-                        negocio.modificar(articulo);
-                        respuesta = MessageBox.Show("Artículo modificado exitosamente.", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Close();
+                        respuesta = MessageBox.Show("Debe completar Código y Nombre.", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
-                        return;
-                    }                  
+                        confirmarModificar = MessageBox.Show("¿Esta seguro de modificar el articulo?", "Modificar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                        if(confirmarModificar == DialogResult.Yes)
+                        {
+                            negocio.modificar(articulo);
+                            respuesta = MessageBox.Show("Artículo modificado exitosamente.", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Close();
+                        }
+                        else
+                        {
+                            return;
+                        }                  
+                    }
                 }
                 else
                 {
