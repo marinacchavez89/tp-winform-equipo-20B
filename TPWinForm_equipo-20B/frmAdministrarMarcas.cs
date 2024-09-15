@@ -127,5 +127,10 @@ namespace TPWinForm_equipo_20B
         {
             dgvMarcas.Columns["Id"].Visible = false;
         }
+
+        private void btnSalirMarca_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

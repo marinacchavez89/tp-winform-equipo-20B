@@ -36,6 +36,7 @@
             this.btnEliminarCategoria = new System.Windows.Forms.Button();
             this.btnAgregarCategoria = new System.Windows.Forms.Button();
             this.dgvCategorias = new System.Windows.Forms.DataGridView();
+            this.btnSalirCategoria = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +94,7 @@
             this.btnAgregarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarCategoria.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarCategoria.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarCategoria.Location = new System.Drawing.Point(192, 358);
+            this.btnAgregarCategoria.Location = new System.Drawing.Point(129, 358);
             this.btnAgregarCategoria.Name = "btnAgregarCategoria";
             this.btnAgregarCategoria.Size = new System.Drawing.Size(81, 23);
             this.btnAgregarCategoria.TabIndex = 4;
@@ -122,11 +123,27 @@
             this.dgvCategorias.Size = new System.Drawing.Size(144, 187);
             this.dgvCategorias.TabIndex = 0;
             // 
+            // btnSalirCategoria
+            // 
+            this.btnSalirCategoria.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSalirCategoria.FlatAppearance.BorderSize = 0;
+            this.btnSalirCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalirCategoria.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalirCategoria.ForeColor = System.Drawing.Color.White;
+            this.btnSalirCategoria.Location = new System.Drawing.Point(236, 358);
+            this.btnSalirCategoria.Name = "btnSalirCategoria";
+            this.btnSalirCategoria.Size = new System.Drawing.Size(81, 23);
+            this.btnSalirCategoria.TabIndex = 13;
+            this.btnSalirCategoria.Text = "Salir";
+            this.btnSalirCategoria.UseVisualStyleBackColor = false;
+            this.btnSalirCategoria.Click += new System.EventHandler(this.btnSalirCategoria_Click);
+            // 
             // frmAdministrarCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 415);
+            this.Controls.Add(this.btnSalirCategoria);
             this.Controls.Add(this.txtAgregarCategoria);
             this.Controls.Add(this.labelAdmCategorias);
             this.Controls.Add(this.btnModificarCategoria);
@@ -154,5 +171,6 @@
         private System.Windows.Forms.Button btnEliminarCategoria;
         private System.Windows.Forms.Button btnAgregarCategoria;
         private System.Windows.Forms.DataGridView dgvCategorias;
+        private System.Windows.Forms.Button btnSalirCategoria;
     }
 }

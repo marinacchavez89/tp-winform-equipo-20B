@@ -124,5 +124,10 @@ namespace TPWinForm_equipo_20B
         {
             dgvCategorias.Columns["Id"].Visible = false;
         }
+
+        private void btnSalirCategoria_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.btnModificarMarca = new System.Windows.Forms.Button();
             this.labelAdmMarcas = new System.Windows.Forms.Label();
             this.txtAgregarMarca = new System.Windows.Forms.TextBox();
+            this.btnSalirMarca = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +68,7 @@
             this.btnAgregarMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarMarca.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarMarca.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarMarca.Location = new System.Drawing.Point(184, 360);
+            this.btnAgregarMarca.Location = new System.Drawing.Point(137, 360);
             this.btnAgregarMarca.Name = "btnAgregarMarca";
             this.btnAgregarMarca.Size = new System.Drawing.Size(81, 23);
             this.btnAgregarMarca.TabIndex = 4;
@@ -122,11 +123,27 @@
             this.txtAgregarMarca.Size = new System.Drawing.Size(266, 20);
             this.txtAgregarMarca.TabIndex = 3;
             // 
+            // btnSalirMarca
+            // 
+            this.btnSalirMarca.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSalirMarca.FlatAppearance.BorderSize = 0;
+            this.btnSalirMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalirMarca.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalirMarca.ForeColor = System.Drawing.Color.White;
+            this.btnSalirMarca.Location = new System.Drawing.Point(241, 360);
+            this.btnSalirMarca.Name = "btnSalirMarca";
+            this.btnSalirMarca.Size = new System.Drawing.Size(81, 23);
+            this.btnSalirMarca.TabIndex = 7;
+            this.btnSalirMarca.Text = "Salir";
+            this.btnSalirMarca.UseVisualStyleBackColor = false;
+            this.btnSalirMarca.Click += new System.EventHandler(this.btnSalirMarca_Click);
+            // 
             // frmAdministrarMarcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 415);
+            this.Controls.Add(this.btnSalirMarca);
             this.Controls.Add(this.txtAgregarMarca);
             this.Controls.Add(this.labelAdmMarcas);
             this.Controls.Add(this.btnModificarMarca);
@@ -154,5 +171,6 @@
         private System.Windows.Forms.Button btnModificarMarca;
         private System.Windows.Forms.Label labelAdmMarcas;
         private System.Windows.Forms.TextBox txtAgregarMarca;
+        private System.Windows.Forms.Button btnSalirMarca;
     }
 }
