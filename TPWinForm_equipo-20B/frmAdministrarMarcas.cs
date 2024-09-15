@@ -45,7 +45,7 @@ namespace TPWinForm_equipo_20B
             {
                 if (string.IsNullOrWhiteSpace(txtAgregarMarca.Text))
                 {
-                    MessageBox.Show("El campo 'Categoria' no puede estar vacio", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("El campo 'Marca' no puede estar vacio", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 marca = new Marca();
@@ -56,13 +56,13 @@ namespace TPWinForm_equipo_20B
                     negocio.agregar(marca);
 
                     MessageBox.Show("Marca agregada exitosamente", "Marcas", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    cargar();                 
+                    cargar();
                 }
             }
             catch (Exception ex)
             {
 
-                throw ex;
+                MessageBox.Show($"{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void cargar()

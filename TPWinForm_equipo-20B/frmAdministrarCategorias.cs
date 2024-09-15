@@ -44,7 +44,7 @@ namespace TPWinForm_equipo_20B
             {
                 if(string.IsNullOrWhiteSpace(txtAgregarCategoria.Text))
                 {
-                    MessageBox.Show("El campo 'Marca' no puede estar vacio", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("El campo 'Categoria' no puede estar vacio", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 categoria = new Categoria();
@@ -60,8 +60,7 @@ namespace TPWinForm_equipo_20B
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                MessageBox.Show($"{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void cargar()

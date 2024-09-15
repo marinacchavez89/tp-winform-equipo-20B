@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using dominio;
 
@@ -46,14 +47,25 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("INSERT INTO CATEGORIAS (Descripcion) VALUES(@Descripcion)");
-                datos.setearParametro("@Descripcion", categoria.Descripcion);
-                datos.ejecutarAccion();
+                datos.setearConsulta("SELECT COUNT(*) FROM CATEGORIAS WHERE Descripcion = @descripcion");
+                datos.setearParametro("@descripcion", categoria.Descripcion);
+
+                int cantidad = (int)datos.ejecutarScalar();
+
+                if (cantidad > 0)
+                {
+                    throw new Exception($"Ya existe una categoria con la descripción '{categoria.Descripcion}' en la base de datos.");
+                }
+                else
+                {
+                    datos.setearConsulta("INSERT INTO CATEGORIAS (Descripcion) VALUES(@Descripcion)");
+                    datos.setearParametro("@Descripcion", categoria.Descripcion);
+                    datos.ejecutarAccion();
+                }                
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                throw new Exception("Error al agregar la categoria: " + ex.Message);
             }
             finally
             {
@@ -66,14 +78,27 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("UPDATE CATEGORIAS SET Descripcion = @Descripcion Where Id = @id");
-                datos.setearParametro("@Descripcion", categoria.Descripcion);
+                datos.setearConsulta("SELECT COUNT(*) FROM CATEGORIAS WHERE Descripcion = @descripcion AND Id <> @id");
+                datos.setearParametro("@descripcion", categoria.Descripcion);
                 datos.setearParametro("@id", categoria.Id);
-                datos.ejecutarAccion();
+
+                int cantidad = (int)datos.ejecutarScalar();
+
+                if (cantidad > 0)
+                {
+                    throw new Exception($"Ya existe una categoría con la descripción '{categoria.Descripcion}' en la base de datos.");
+                }
+                else
+                {
+                    datos.setearConsulta("UPDATE CATEGORIAS SET Descripcion = @Descripcion WHERE Id = @id");
+                    datos.setearParametro("@Descripcion", categoria.Descripcion);
+                    datos.setearParametro("@id", categoria.Id);
+                    datos.ejecutarAccion();
+                }
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Error al modificar la categoría: " + ex.Message);
             }
             finally
             {

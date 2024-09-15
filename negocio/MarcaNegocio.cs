@@ -47,14 +47,25 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("INSERT INTO MARCAS (Descripcion) VALUES(@Descripcion)");
-                datos.setearParametro("@Descripcion", marca.Descripcion);
-                datos.ejecutarAccion();
+                datos.setearConsulta("SELECT COUNT(*) FROM MARCAS WHERE Descripcion = @descripcion");
+                datos.setearParametro("@descripcion", marca.Descripcion);
+
+                int cantidad = (int)datos.ejecutarScalar();
+
+                if (cantidad > 0)
+                {
+                    throw new Exception($"Ya existe una marca con la descripción '{marca.Descripcion}' en la base de datos.");
+                }
+                else
+                {
+                    datos.setearConsulta("INSERT INTO MARCAS (Descripcion) VALUES(@Descripcion)");
+                    datos.setearParametro("@Descripcion", marca.Descripcion);
+                    datos.ejecutarAccion();
+                }
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                throw new Exception("Error al agregar la marca: " + ex.Message);
             }
             finally
             {
@@ -67,14 +78,28 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("UPDATE MARCAS SET Descripcion = @Descripcion Where Id = @id");
-                datos.setearParametro("@Descripcion", marca.Descripcion);
+                datos.setearConsulta("SELECT COUNT(*) FROM MARCAS WHERE Descripcion = @descripcion AND Id <> @id");
+                datos.setearParametro("@descripcion", marca.Descripcion);
                 datos.setearParametro("@id", marca.Id);
-                datos.ejecutarAccion();
+
+                int cantidad = (int)datos.ejecutarScalar();
+
+                if (cantidad > 0)
+                {
+                    throw new Exception($"Ya existe una marca con la descripción '{marca.Descripcion}' en la base de datos.");
+                }
+                else
+                {
+                    datos.setearConsulta("UPDATE MARCAS SET Descripcion = @Descripcion Where Id = @id");
+                    datos.setearParametro("@Descripcion", marca.Descripcion);
+                    datos.setearParametro("@id", marca.Id);
+                    datos.ejecutarAccion();
+                }
+                
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Error al modificar la marca: " + ex.Message);
             }
             finally
             {

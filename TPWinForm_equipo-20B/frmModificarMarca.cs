@@ -34,12 +34,29 @@ namespace TPWinForm_equipo_20B
         {
             MarcaNegocio negocio = new MarcaNegocio();
 
-            seleccionado.Descripcion = txtDescripcionMarca.Text;
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txtDescripcionMarca.Text))
+                {
+                    MessageBox.Show("El campo 'Descripción' no puede estar vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
-            negocio.modificar(seleccionado);
+                seleccionado.Descripcion = txtDescripcionMarca.Text;
 
-            MessageBox.Show("Marca modificada exitosamente");
-            Close();
+                DialogResult respuesta = MessageBox.Show("¿Está seguro que desea modificar la marca?", "Modificar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (respuesta == DialogResult.Yes)
+                {
+                    negocio.modificar(seleccionado);
+                    MessageBox.Show("Marca modificada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
