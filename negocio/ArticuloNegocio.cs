@@ -139,10 +139,12 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT COUNT(*) FROM ARTICULOS WHERE Codigo = @Codigo AND IdMarca = @idMarca AND IdCategoria = @idCategoria");
+                datos.setearConsulta("SELECT COUNT(*) FROM ARTICULOS WHERE Codigo = @Codigo AND IdMarca = @idMarca AND IdCategoria = @idCategoria AND Id <> @id");
                 datos.setearParametro("@Codigo", art.Codigo);
                 datos.setearParametro("@idMarca", art.TipoMarca.Id);
                 datos.setearParametro("@idCategoria", art.TipoCategoria.Id);
+                datos.setearParametro("@id", art.Id);
+
 
                 int cantidad = (int)datos.ejecutarScalar();
 

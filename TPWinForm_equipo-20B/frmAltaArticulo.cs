@@ -76,7 +76,7 @@ namespace TPWinForm_equipo_20B
                         if(confirmarModificar == DialogResult.Yes)
                         {
                             negocio.modificar(articulo);
-                            respuesta = MessageBox.Show("Artículo modificado exitosamente.", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            respuesta = MessageBox.Show("Artículo modificado exitosamente.", "Modificar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Close();
                         }
                         else
