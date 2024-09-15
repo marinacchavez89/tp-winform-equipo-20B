@@ -62,6 +62,7 @@ namespace TPWinForm_equipo_20B
                     {
                         negocio.modificar(articulo);
                         respuesta = MessageBox.Show("Artículo modificado exitosamente.", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Close();
                     }
                     else
                     {
@@ -78,12 +79,10 @@ namespace TPWinForm_equipo_20B
                     {
                         negocio.agregar(articulo);
                         respuesta = MessageBox.Show("Artículo agregado exitosamente.", "Agregar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Close();
                     }
 
                 }
-
-                Close();
-
             }
             catch (FormatException ex) { MessageBox.Show("Campo Precio admite solo números y no puede estar vacío.", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
             catch (Exception ex)

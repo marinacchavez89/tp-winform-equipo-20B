@@ -49,6 +49,6 @@ C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winf
 C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\negocio\bin\Debug\dominio.pdb
 C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
 C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
-C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\negocio\obj\Debug\negocio.csproj.CopyComplete
 C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\negocio\obj\Debug\negocio.dll
 C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\negocio\obj\Debug\negocio.pdb
+C:\Users\usuario\Desktop\Juan\Materias\Programacion III\PROYECTO WINFORM\tp-winform-equipo-20B\negocio\obj\Debug\negocio.csproj.Up2Date
