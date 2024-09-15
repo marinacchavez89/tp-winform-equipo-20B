@@ -101,8 +101,6 @@ namespace negocio
 
             try
             {
-
-                // Verificar si ya existe un artículo con el mismo código y marca.
                 datos.setearConsulta("SELECT COUNT(*) FROM ARTICULOS WHERE Codigo = @Codigo AND IdMarca = @idMarca AND IdCategoria = @idCategoria");
                 datos.setearParametro("@Codigo", articulo.Codigo);
                 datos.setearParametro("@idMarca", articulo.TipoMarca.Id);
@@ -141,6 +139,20 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
+                datos.setearConsulta("SELECT COUNT(*) FROM ARTICULOS WHERE Codigo = @Codigo AND IdMarca = @idMarca AND IdCategoria = @idCategoria");
+                datos.setearParametro("@Codigo", art.Codigo);
+                datos.setearParametro("@idMarca", art.TipoMarca.Id);
+                datos.setearParametro("@idCategoria", art.TipoCategoria.Id);
+
+                int cantidad = (int)datos.ejecutarScalar();
+
+                if (cantidad > 0)
+                {
+                    throw new Exception($"El artículo con Código '{art.Codigo}', Marca '{art.TipoMarca}', Categoria '{art.TipoCategoria}' ya existe en la base de datos.");
+                }
+                else
+                {
+
                 datos.setearConsulta("update ARTICULOS set Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, IdMarca = @idMarca, IdCategoria = @idCategoria, Precio = @precio where Id = @id");
                 datos.setearParametro("@codigo", art.Codigo);
                 datos.setearParametro("@nombre", art.Nombre);
@@ -149,8 +161,8 @@ namespace negocio
                 datos.setearParametro("@idCategoria", art.TipoCategoria.Id);
                 datos.setearParametro("@precio", art.Precio);
                 datos.setearParametro("@id", art.Id);
-
                 datos.ejecutarAccion();
+                }
             }
             catch (Exception ex)
             {

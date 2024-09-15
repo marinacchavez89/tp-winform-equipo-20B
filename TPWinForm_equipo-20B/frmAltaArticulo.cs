@@ -50,8 +50,17 @@ namespace TPWinForm_equipo_20B
                     return;
                 }
                 articulo.TipoMarca = (Marca)cboMarcaDetalle.SelectedItem;
+                if(cboMarcaDetalle.SelectedItem == null)
+                {
+                    MessageBox.Show("Debe seleccionar una Marca.", "Verificar",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 articulo.TipoCategoria = (Categoria)cboCategoria.SelectedItem;              
-
+                if(cboCategoria.SelectedItem == null)
+                {
+                    MessageBox.Show("Debe seleccionar una Categoría.", "Verificar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 DialogResult respuesta;
                 DialogResult confirmarModificar;
 
