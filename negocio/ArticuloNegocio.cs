@@ -181,6 +181,11 @@ namespace negocio
             try
             {
                 AccesoDatos datos = new AccesoDatos();
+
+                datos.setearConsulta("DELETE FROM IMAGENES WHERE IdArticulo = " + id);
+                datos.ejecutarAccion();
+                datos.cerrarConexion();
+
                 datos.setearConsulta("delete from ARTICULOS where Id = @id");
                 datos.setearParametro("id", id);
                 datos.ejecutarAccion();
@@ -190,6 +195,7 @@ namespace negocio
 
                 throw ex;
             }
+        
         }
 
         public List<Articulo> filtrar(string campo, string criterio, string filtro)
